@@ -1,1 +1,0 @@
-import{r as t,j as e}from"./index-e6233994.js";const u=()=>{const[s,o]=t.useState([]);return t.useState(1),t.useState(9),t.useState(!1),e.jsx("ul",{children:s.map(({photo_url:r,photo_description:a})=>e.jsx(GalleryItem,{url:r,alt:a}))})};export{u as Gallery,u as default};
