@@ -1,3 +1,4 @@
+import { Route, Routes} from 'react-router-dom';
 import { Container } from '../src/components/Container/Container.styled';
 import { Header } from '../src/components/Header/Header';
 import { Main } from '../src/components/Main/Main';
@@ -8,7 +9,11 @@ function App() {
   return  <Container>
 
               <Header/>
-              <Main/>
+
+              <Routes>
+                <Route  path="/"  element={ <Route redirectTo="/" component={ <Main/>} /> } />
+              </Routes>
+
               <Footer/>
               
           </Container>
