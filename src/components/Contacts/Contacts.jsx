@@ -36,6 +36,5 @@ export const Contacts = ()=>{
                     </li>
 
                 </ul> */}
-
             </div>
 }
