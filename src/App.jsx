@@ -11,7 +11,8 @@ function App() {
               <Header/>
 
               <Routes>
-                <Route  path="/steering-wheels"  element={ <Route redirectTo="/steering-wheels" component={ <Main/>} /> } />
+              
+                <Route index  element={ <Route redirectTo="/" component={ <Main/>} /> } />
               </Routes>
 
               <Footer/>
