@@ -1,3 +1,4 @@
+
 export const Contacts = ()=>{
 
     return  <div>
@@ -8,12 +9,12 @@ export const Contacts = ()=>{
                     <li><a href="tel:+38(050)531-92-76">+38 (050) 531-92-76</a></li>
                 </ul>
 
-                <ul >
+                {/* <ul >
 
                     <li>
                         <a href="#">
                             <svg>
-                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                <use href={icon_instagram}></use>
                             </svg>
                         </a>
                     </li>
@@ -21,7 +22,7 @@ export const Contacts = ()=>{
                     <li>
                         <a href="#">
                             <svg >
-                                <use href="./images/sprite.svg#icon-viber"></use>
+                                <use href="../assets/images/sprite.svg#icon-viber"></use>
                             </svg>
                         </a>
                     </li>
@@ -29,12 +30,12 @@ export const Contacts = ()=>{
                     <li>
                         <a href="#">
                             <svg>
-                                <use href="./images/sprite.svg#icon-telegram"></use>
+                                <use href='../assets/images/sprite.svg#icon-telegram'></use>
                             </svg>
                         </a>
                     </li>
 
-                </ul>
+                </ul> */}
 
             </div>
 }
