@@ -11,7 +11,7 @@ function App() {
               <Header/>
 
               <Routes>
-                <Route  path="/"  element={ <Route redirectTo="/" component={ <Main/>} /> } />
+                <Route  path=""  element={ <Route redirectTo="" component={ <Main/>} /> } />
               </Routes>
 
               <Footer/>
