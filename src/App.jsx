@@ -12,7 +12,8 @@ function App() {
 
               <Routes>
               
-                <Route index  element={ <Route redirectTo="/" component={ <Main/>} /> } />
+                <Route path="/" element={ <Main/> } />
+                
               </Routes>
 
               <Footer/>
