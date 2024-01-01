@@ -8,20 +8,20 @@ export const Gallery = () => {
   const [perPage] = useState(9);
   const [IsLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    const fetchPhotos = async () => {
-      try {
-          setIsLoading(true);
-          const {photos, total} = await getPhotos(page, perPage);
-          setPhotos([...Object.entries(photos)]);
-      } catch (error) { 
-          console.error('Error fetching photos:', error);
-      } finally {
-          setIsLoading(false);
-      }
-    };
-    fetchPhotos();
-  }, []);
+  // useEffect(() => {
+  //   const fetchPhotos = async () => {
+  //     try {
+  //         setIsLoading(true);
+  //         const {photos, total} = await getPhotos(page, perPage);
+  //         setPhotos([...Object.entries(photos)]);
+  //     } catch (error) { 
+  //         console.error('Error fetching photos:', error);
+  //     } finally {
+  //         setIsLoading(false);
+  //     }
+  //   };
+  //   fetchPhotos();
+  // }, []);
 
   return  <ul>
             { 
