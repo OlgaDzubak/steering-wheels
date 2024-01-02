@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+axios.defaults.baseURL = 'https://steering-wheels-backend.onrender.com';
+
 async function getPhotos(page, per_page) {
       
       console.log("Я в getPhotos");
