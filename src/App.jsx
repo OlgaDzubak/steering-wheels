@@ -1,5 +1,5 @@
 import { Route, Routes} from 'react-router-dom';
-import { Container } from './components/Container/Container.styled';
+// import { Container } from './components/Container/Container.styled';
 import { Header } from './components/Header/Header';
 import { Main } from './components/Main/Main';
 import { Footer } from './components/Footer/Footer';
