@@ -13,7 +13,7 @@ function App() {
               <Routes>
               
                 <Route 
-                  path="/steering-wheels" 
+                  path="/" 
                   element={ <Main/> }
                 />
 
