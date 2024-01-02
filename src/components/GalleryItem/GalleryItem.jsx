@@ -1,13 +1,15 @@
 
-const GalleryItem = (url, alt) => {
-
-    return  <item_li>
-                <item_a href={url}>
-                    <item_img 
+const GalleryItem = ({url, alt, key}) => {
+    console.log(key, " " ,url, " ",  alt)
+    return  <li key={key}>
+                {/* <a href={url}> */}
+                    <img 
                         src={url} 
-                        alt={alt}/>
-                    </item_a>
-            </item_li>
+                        alt={alt}
+
+                    />
+                {/* </a> */}
+            </li>
 };
 
 export default GalleryItem;

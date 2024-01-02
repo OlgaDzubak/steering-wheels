@@ -21,5 +21,5 @@ export const item_a = styled.a`
 `;
 
 export const item_img = styled.img` 
-     width: 100%;
+display: block;
 `;

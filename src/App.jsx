@@ -17,6 +17,11 @@ function App() {
                   element={ <Main/> }
                 />
 
+                <Route
+                  index
+                  element={ <Main/> }
+                />
+
               </Routes>
 
               <Footer/>
