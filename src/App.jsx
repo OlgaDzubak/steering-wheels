@@ -6,19 +6,22 @@ import { Footer } from './components/Footer/Footer';
 
 
 function App() {
-  return  <Container>
+  return  <>
 
               <Header/>
 
               <Routes>
               
-                <Route path="/" element={ <Main/> } />
+                <Route 
+                  path="/" 
+                  element={ <Main/> }
+                />
 
               </Routes>
 
               <Footer/>
               
-          </Container>
+          </>
 }
 
 export default App;
