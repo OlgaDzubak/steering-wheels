@@ -1,7 +1,6 @@
 
-const GalleryItem = ({url, alt, key}) => {
-    console.log(key, " " ,url, " ",  alt)
-    return  <li key={key}>
+const GalleryItem = ({url, alt, id}) => {
+    return  <li>
                 {/* <a href={url}> */}
                     <img 
                         src={url} 

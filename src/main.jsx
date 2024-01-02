@@ -5,7 +5,7 @@ import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <BrowserRouter basename="/steering-wheels/search">
+      <BrowserRouter basename="/steering-wheels/">
           <App />
       </BrowserRouter>
   </React.StrictMode>,
