@@ -17,7 +17,7 @@ export const Gallery = () => {
       } catch (error) { 
           console.error('Error fetching photos:', error);
       } finally {
-          setIsLoading(false);
+          setIsLoading(false); 
       }
     };
     fetchPhotos();
