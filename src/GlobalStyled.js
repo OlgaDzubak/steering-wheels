@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import styled from '@emotion/styled';
 
 const GlobalStyle = createGlobalStyle`
 *,
@@ -32,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
     :root {
-    --white-color: #F3F3F3;
+    --text-color: rgba(30, 30, 30);
     --whitefifty-color: rgba(243, 243, 243, 0.5);
     --whitefourty-color: rgba(243, 243, 243, 0.4);
     --whitetwenty-color: rgba(243, 243, 243, 0.2);
@@ -40,20 +41,21 @@ const GlobalStyle = createGlobalStyle`
     --bluefifty-color: rgba(22, 31, 55, 0.5);
     --hovergreen-color: rgba(64, 112, 205, 0.5);
     --welcomepagetext-color: #FAFAFA;
-    --mainbackground-color: #0A0A11;
+    --mainbackground-color: #F3F3F3;
     --buttoncancel-color: #434D67;
     --red-color: rgba(218, 20, 20, 0.5);
     --green-color: rgba(60, 188, 129, 0.5);
+    --shadow-color: rgba(200, 200, 200, 0.7);
 
     --transition: 300ms ease-in; 
 
-    
+    --container-padding: 30px;
   }
 
   body {
-    background-color: var(--mainbackground-color);
+    background-color: var(--whitefifty-color);
     font-family: 'Manrope', sans-serif;
-    color: var(--white-color);
+    color: var(--text-color);
     word-wrap: break-word;
     line-height: 1.2;
   }

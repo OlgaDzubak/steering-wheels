@@ -1,20 +1,37 @@
 import { useEffect, useState } from 'react';
+import { Loader } from '../Loader/Loader.styled';
+import { ThreeDots } from 'react-loader-spinner';
+import {Gallery_ul} from '../Gallery/Gallery.styled';
 import getPhotos from '../../api_operations/getPhotos';
-import GalleryItem from "../GalleryItem/GalleryItem"
-
+import GalleryItem from "../GalleryItem/GalleryItem";
+import Paginator from "../Paginator/Paginator";
 
 export const Gallery = () => {
-  const [photos, setPhotos] = useState([{"_id":"1111",  "name":"kjfkrjf", "photo_url":"https://res.cloudinary.com/dxvnh0oip/image/upload/v1703542581/steering-wheels/Photo_1_bikpmi.png", "photo_description":"flklgklr", "material":"leather/"}]);
+
+  const [photos, setPhotos] = useState([]);
+  const [total, setTotal] = useState(1);
   const [page, setPage] = useState(1);
   const [perPage] = useState(9);
   const [IsLoading, setIsLoading] = useState(false);
+  const [IsEmpty, setIsEmpty] = useState(false);
 
   useEffect(() => {
     const fetchPhotos = async () => {
       try {
+          
           setIsLoading(true);
-          const {photos, total} = await getPhotos(page, perPage);
-          setPhotos([...Object.entries(photos)]);
+
+          const {data, totalCount} = await getPhotos(page, perPage);
+
+          if (data.length === 0) {
+              setIsEmpty(true);
+          } else {
+              setIsEmpty(false);
+          }
+
+          setTotal(totalCount);
+          setPhotos(data);
+
       } catch (error) { 
           console.error('Error fetching photos:', error);
       } finally {
@@ -22,15 +39,37 @@ export const Gallery = () => {
       }
     };
     fetchPhotos();
-  }, []);
+  }, [page]);
+  
+  const onClickPaginator = ({selected}) => { 
+        const chosenPage = selected ;
+        if (chosenPage < Math.ceil(total/perPage)) {
+            setPage(chosenPage+1);
+        }
+  };
 
-  return  <ul>
-            { 
-              photos.map( ({_id ,photo_url, photo_description}) => { 
-                return <GalleryItem url={photo_url} alt={photo_description} key={_id}/>
-              } ) 
-            }
-          </ul>
+  
+  return  <>
+              { (!IsEmpty)  ?
+                            <>
+
+                              <Gallery_ul>  { photos.map( ({ _id, photo_url, photo_description }) => { 
+                                      return <GalleryItem _id={_id} url={photo_url} alt={photo_description} key={_id} />})
+                                    }
+                              </Gallery_ul>
+
+                              <Paginator pageCount={Math.ceil(total/perPage)} handlePageClick={onClickPaginator} />
+
+                            </>
+
+                          : <></>
+              }
+
+              { 
+                (IsLoading) &&  (<Loader>{' '} <ThreeDots color="var(--text-color)" width="60" /></Loader> )  
+              }
+          </>
+          
 };
 
 export default Gallery;

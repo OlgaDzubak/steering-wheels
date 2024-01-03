@@ -1,18 +1,8 @@
 import styled from '@emotion/styled';
 
-export const Main = styled.div`
-  padding-top: 30px;
+export const Container = styled.div`
+  padding-left  : var(--container-padding);
+  padding-right : var(--container-padding);
+  padding-top   : 30px;
   padding-bottom: 30px;
-
-  @media (min-width: 375px) {
-
-  }
-
-  @media (min-width: 768px) {
-
-  }
-
-  @media (min-width: 1280px) {
-
-  }
 `;

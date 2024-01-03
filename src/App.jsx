@@ -9,8 +9,8 @@ function App() {
   return  <>
 
               <Header/>
-
-              <Routes>
+              <Main/>
+              {/* <Routes>
               
                 <Route 
                   path="/" 
@@ -22,7 +22,7 @@ function App() {
                   element={ <Main/> }
                 />
 
-              </Routes>
+              </Routes> */}
 
               <Footer/>
               

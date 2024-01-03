@@ -33,7 +33,6 @@ export const LoaderContainer = styled.div`
   gap: 20px;
 
   width: 100%;
-  height: 100vh;
 `;
 
 export const LoaderSVG = styled(LoaderIcon)`
@@ -53,7 +52,7 @@ export const LoaderSVG = styled(LoaderIcon)`
 `;
 
 export const LoaderText = styled.p`
-  color: var(--white-color);
+  color: var(--text-color);
   font-size: 24px;
   font-weight: 600;
 `;
