@@ -58,7 +58,7 @@ export const Gallery = () => {
                                     }
                               </Gallery_ul>
 
-                              <Paginator pageCount={Math.ceil(total/perPage)} handlePageClick={onClickPaginator} />
+                              <Paginator pageCount={Math.ceil(total/perPage)} handlePageClick={onClickPaginator} isLoading={IsLoading}/>
 
                             </>
 

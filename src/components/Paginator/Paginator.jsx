@@ -7,7 +7,9 @@ import {
   MdOutlineArrowForwardIos,
 } from 'react-icons/md';
 
-export const Paginator = ({ handlePageClick, pageCount }) => {
+export const Paginator = ({ handlePageClick, pageCount, isLoading }) => {
+
+
 
   return (
     <>
@@ -15,11 +17,11 @@ export const Paginator = ({ handlePageClick, pageCount }) => {
         <StyledReactPaginate
           breakLabel="..."
           nextLabel={ <MdOutlineArrowForwardIos fill="rgba(243, 243, 243, 0.30)" size={15} /> }
-          onPageChange={handlePageClick}
-          pageCount={pageCount}
+          onPageChange={ handlePageClick }
+          pageCount={ pageCount }
           previousLabel={ <MdOutlineArrowBackIos fill="rgba(243, 243, 243, 0.30)" size={15} /> }
-          renderOnZeroPageCount={null}
-          onPageActive={window.scrollTo({ top: 0, behavior: 'smooth', })}
+          renderOnZeroPageCount={ null }
+          onPageActive={ (isLoading) && window.scrollTo({ top: 0, behavior: 'smooth', }) }
         />
       )}
     </>
