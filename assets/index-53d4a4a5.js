@@ -418,7 +418,7 @@ button {
   padding-right : var(--container-padding);
   padding-top   : 30px;
   padding-bottom: 30px;
-`,wg=L.lazy(()=>yg(()=>import("./Gallery-1f6c3e99.js"),[])),Sg=()=>N.jsx("main",{children:N.jsx(xg,{children:N.jsx(wg,{})})}),kg=I.footer`
+`,wg=L.lazy(()=>yg(()=>import("./Gallery-3220aad1.js"),[])),Sg=()=>N.jsx("main",{children:N.jsx(xg,{children:N.jsx(wg,{})})}),kg=I.footer`
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0px -2px 0px 0px  var(--shadow-color);
