@@ -61,7 +61,7 @@ return {
       backgroundColor: 'transparent',
     }),
     option: () => ({
-        padding: '5px 5px 5px 5px',
+        padding: '5px 10px 5px 10px',
         fontSize: '12px',
         backgroundColor: 'transparent',
         color: `var(--text-color)`,
