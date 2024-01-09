@@ -31,7 +31,7 @@ const HomePage = () => {
 
   return  <>
             <Header language={language} onLanguageChange={onLanguageChange}/>
-            <Main language={language}/>
+{/*             <Main language={language}/> */}
             <Footer language={language}/>
           </>
 };
