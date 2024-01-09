@@ -18,6 +18,7 @@ const Gallery = ({language}) => {
   const [IsEmpty, setIsEmpty] = useState(false);
 
   useEffect(() => {
+    console.log(" Gallery useEffect");
     const fetchPhotos = async () => {
       try {
           

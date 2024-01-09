@@ -9,7 +9,7 @@ import Footer from '../components/Footer/Footer';
 let hash = window.location.hash;
 hash = hash.substring(1);
 let path = window.location.pathname;
-// if (path[path.length-1]==="/") path = path.slice(0, path.length-1);    
+if (path[path.length-1]==="/") path = path.slice(0, path.length-1);    
 if (hash!="ua" && hash!="ru") {hash = ""};
 
 
