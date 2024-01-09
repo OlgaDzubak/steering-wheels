@@ -53,7 +53,7 @@ const Gallery = ({language}) => {
 
   
   return  <>
-              { (!IsEmpty)  ?
+{/*               { (!IsEmpty)  ?
                             <>
                             
                               <Gallery_ul>  { photos.map((item) => { 
@@ -70,7 +70,7 @@ const Gallery = ({language}) => {
 
               { 
                 (IsLoading) &&  (<Loader>{' '} <ThreeDots color="var(--text-color)" width="60" /></Loader> )  
-              }
+              } */}
           </>
           
 };
