@@ -13,5 +13,5 @@ export default defineConfig({
       components: '/src/components',
     },
   },
-  base: '/steering-wheels',
+  base: '/steering-wheels/',
 });
