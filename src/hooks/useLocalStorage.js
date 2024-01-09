@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-const useLocalStorage=(key, hash, defaultValue)=>{
+const useLocalStorage=(key, defaultValue)=>{
 
 const [storedValue, setStoredValue] = useState(()=>{
   
   try {
-    if (!hash) {
+    // if (!hash) {
       const value = localStorage.getItem(key);
 
       if (value){
@@ -15,10 +15,10 @@ const [storedValue, setStoredValue] = useState(()=>{
         return defaultValue;
       }
 
-    }else{
-      localStorage.setItem(key, JSON.stringify(hash));
-      return hash;
-    }
+    // }else{
+    //   localStorage.setItem(key, JSON.stringify(hash));
+    //   return hash;
+    // }
   } catch (error) {
       return defaultValue;
   }

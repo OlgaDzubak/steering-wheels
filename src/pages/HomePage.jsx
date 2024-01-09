@@ -6,19 +6,26 @@ import Main from '../components/Main/Main';
 import Footer from '../components/Footer/Footer';
 
 
-let hash = window.location.hash;
-hash = hash.substring(1);
-let path = window.location.pathname;
-if (path[path.length-1]==="/") path = path.slice(0, path.length-1);    
-if (hash!="ua" && hash!="ru") {hash = ""};
+// let hash = window.location.hash;
+// hash = hash.substring(1);
+// let path = window.location.pathname;
+// if (path[path.length-1]==="/") path = path.slice(0, path.length-1);    
+// if (hash!="ua" && hash!="ru") {hash = ""};
 
 
 const HomePage = () => {
  
-  const [language, setLanguage] = useLocalStorage("language", hash, "ua");
+  const [language, setLanguage] = useLocalStorage("language", "ua");
 
   useEffect(()=>{ 
+
     console.log(" HomePage useEffect");
+    let hash = window.location.hash;
+    hash = hash.substring(1);
+    let path = window.location.pathname;
+    //if (path[path.length-1]==="/") path = path.slice(0, path.length-1);    
+    if (hash!="ua" && hash!="ru") {hash = ""};
+
     location.href = path + "#" + language;
     document.querySelector("html").setAttribute("lang", language);
     document.querySelector("title").textContent = contentData.pageTitle[language];
