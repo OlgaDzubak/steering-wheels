@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
 import { ReactComponent as InstagramIMG } from '../../assets/images/link_icons/instagram.svg';
 import { ReactComponent as ViberIMG } from '../../assets/images/link_icons/viber.svg';
 import { ReactComponent as TelegramIMG } from '../../assets/images/link_icons/telegram.svg';

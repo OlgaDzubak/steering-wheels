@@ -1,5 +1,8 @@
+import Select from 'react-select';
+import contentData from '../../helpers/language';
 import {    Header_, 
             Container, 
+            SelectStyles,
             Header_TitleContainer, 
             Header_Title, 
             Header_SubTitle,
@@ -15,21 +18,30 @@ import {    Header_,
             StyledViberSVG,
             StyledTelegramSVG   } from './Header.styled';
 
+const Header = ({language, onLanguageChange}) => {
 
-            export  const Header = () => {
+
+    const handleLanguageChange = (option, action) => {
+        // if (option) onLanguageChange(option.value);
+        //   else 
+          onLanguageChange(option.value);
+      
+    }
+
 
     return  < Header_>
+             
                 < Container>
 
                     <Header_TitleContainer>
-                        <Header_Title>Перетяжка керма та дрібних деталей автомобілів</Header_Title>
-                        <Header_SubTitle>(ручки КПП, пильники, підлокітники, дверні картки, та інше)</Header_SubTitle>
+                        <Header_Title>{contentData.title[language]}</Header_Title>
+                        <Header_SubTitle>{contentData.subTitle[language]}</Header_SubTitle>
                     </Header_TitleContainer>
 
                     < Header_ContactsContainer>
         
                         < Header_Contacts_ul>
-                            <Header_Contacts_li><Header_P> м.Дніпро</Header_P></Header_Contacts_li>
+                            <Header_Contacts_li><Header_P>{contentData.address[language]}</Header_P></Header_Contacts_li>
                             <Header_Contacts_li><Header_A href="tel:+38(097)678-13-96">+38 (097) 678-13-96</Header_A></Header_Contacts_li>
                             <Header_Contacts_li><Header_A href="tel:+38(050)531-92-76">+38 (050) 531-92-76</Header_A></Header_Contacts_li>
                         </Header_Contacts_ul>
@@ -56,8 +68,20 @@ import {    Header_,
 
                         </SocialLinks_ul>
 
+                        <Select
+                                isSearchable = {false}
+                                placeholder = {language}
+                                options={[{"value": "ua" , "label": "ua"}, {"value": "ru" , "label":"ru"}]} 
+                                onChange={handleLanguageChange}
+                                styles={SelectStyles()} 
+                                name = {"languages"}
+                        />
+
                     </Header_ContactsContainer>
 
                 </Container>
+                
             </Header_>
 }
+
+export default Header;

@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import styled from '@emotion/styled';
 
 const GlobalStyle = createGlobalStyle`
 *,
@@ -49,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
 
     --transition: 300ms ease-in; 
 
-    --container-padding: 30px;
+    --container-padding: 20px;
   }
 
   body {

@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
 import { ReactComponent as InstagramIMG } from '../../assets/images/link_icons/instagram.svg';
 import { ReactComponent as ViberIMG     } from '../../assets/images/link_icons/viber.svg';
 import { ReactComponent as TelegramIMG  } from '../../assets/images/link_icons/telegram.svg';
@@ -7,26 +6,66 @@ import { ReactComponent as TelegramIMG  } from '../../assets/images/link_icons/t
 
 
 export const Header_ = styled.header`
-  padding-top: 30px;
-  padding-bottom: 30px;
-  box-shadow: 0px 2px 0px 0px var(--shadow-color);
+
+    padding-top: 30px;
+    box-shadow: 0px 2px 0px 0px var(--shadow-color);
 `;
 export const Container = styled.div`
-  padding-left : var(--container-padding);
-  padding-right : var(--container-padding);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
 
-  @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-  screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-  screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+    padding-left : var(--container-padding);
+    padding-right : var(--container-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+
+    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
+    screen and (min-resolution : 96dpi) and (max-width: 767.8px),
+    screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+    }
+`;
+
+export const TitleAndContacts = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+
+   @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
+    screen and (min-resolution : 96dpi) and (max-width: 767.8px),
+    screen and (min-resolution : 1dppx) and (max-width: 767.8px){
     flex-direction: column;
     row-gap: 15px;
     align-items: center;
-  }
+    }
+
 `;
+
+export const SelectStyles = () => {
+return {
+    container: (baseStyles, state)  =>({
+        ...baseStyles,
+
+    }),
+    control: (baseStyles, state) => ({
+      ...baseStyles,
+      display: 'flex',
+      padding: '0px 0px 0px 0px',
+      fontWeight: '400',
+      fontSize: '12px',
+      color: 'var(--text-color)',
+      border: 'none',
+      backgroundColor: 'transparent',
+    //   borderColor: 'var(--text-color)',
+    //   borderRadius: '10px',
+    })};
+};
 
 
 //---- Title ---------------------------------------------------------
@@ -149,31 +188,28 @@ export const Header_ContactsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     row-gap: 25px;
+    
 
     @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
     screen and (min-resolution : 96dpi) and (max-width: 767.8px),
     screen and (min-resolution : 1dppx) and (max-width: 767.8px){
         align-items: center;
-    }
-
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-      screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-      screen and (min-resolution : 1dppx) and (max-width: 767.8px){
-          align-items: center;
+        width: 100%;
     }
       
-      @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1399.8px),
-      screen and (min-resolution : 96dpi) and (min-width: 768px) and (max-width: 1399.8px),
-      screen and (min-resolution : 1dppx) and (min-width: 768px) and (max-width: 1399.8px){
+      @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
+      screen and (min-resolution : 96dpi) and (min-width: 768px),
+      screen and (min-resolution : 1dppx) and (min-width: 768px){
           row-gap: 15px;
+          align-items: flex-end;
       }
+
 `;
 export const Header_Contacts_ul = styled.ul`
     display: flex;
-    width: 160px;
+    max-width: 180px;
     flex-direction: column;
     gap: 7px;
-    
 
     @media screen and (min-device-pixel-ratio: 1) and (max-width: 419.8px),
     screen and (min-resolution : 96dpi) and (max-width: 419.8px),
@@ -195,6 +231,7 @@ export const Header_Contacts_li = styled.li`
 `;
 export const Header_P = styled.p`
     font-weight: 600;
+    text-wrap:nowrap;
 `;
 export const Header_A = styled.a`
     padding-top: 3px;

@@ -1,3 +1,4 @@
+import contentData from '../../helpers/language';
 import {    Footer_, 
             Container, 
             Footer_TitleContainer, 
@@ -15,20 +16,21 @@ import {    Footer_,
             StyledViberSVG,
             StyledTelegramSVG   } from './Footer.styled';
 
-export const Footer = () => {
+            
+const Footer = ({language}) => {
 
     return  < Footer_>
                 < Container>
 
                     < Footer_TitleContainer>
-                        <Footer_Title>Перетяжка керма та дрібних деталей автомобілів</Footer_Title>
-                        <Footer_SubTitle>(ручки КПП, пильники, підлокітники, дверні картки, та інше)</Footer_SubTitle>
+                        <Footer_Title>{contentData.title[language]}</Footer_Title>
+                        <Footer_SubTitle>{contentData.subTitle[language]}</Footer_SubTitle>
                     </Footer_TitleContainer>
 
                     < Footer_ContactsContainer>
         
                         < Footer_Contacts_ul >
-                            <Footer_Contacts_li><Footer_P> м.Дніпро</Footer_P></Footer_Contacts_li>
+                            <Footer_Contacts_li><Footer_P>{contentData.address[language]}</Footer_P></Footer_Contacts_li>
                             <Footer_Contacts_li><Footer_A href="tel:+38(097)678-13-96">+38 (097) 678-13-96</Footer_A></Footer_Contacts_li>
                             <Footer_Contacts_li><Footer_A href="tel:+38(050)531-92-76">+38 (050) 531-92-76</Footer_A></Footer_Contacts_li>
                         </Footer_Contacts_ul>
@@ -61,3 +63,5 @@ export const Footer = () => {
                 </Container>
             </Footer_>
 };
+
+export default Footer;

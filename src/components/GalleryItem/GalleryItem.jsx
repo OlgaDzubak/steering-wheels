@@ -1,6 +1,6 @@
 import { Item_li, Item_img, Item_P } from "./GalleryItem.styled";
 
-const GalleryItem = ({url, alt, id}) => {
+const GalleryItem = ({url, alt}) => {
     return  <Item_li>
                 {/* <a href={url}> */}
                     <Item_img src={url} alt={alt} />

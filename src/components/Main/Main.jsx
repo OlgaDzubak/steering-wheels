@@ -2,11 +2,14 @@ import { lazy } from 'react';
 const Gallery = lazy(() => import('../../../src/components/Gallery/Gallery'));
 import { Container } from './Main.styled';
 
-export const Main = () => {
+
+const Main = ({language}) => {
 
     return  <main>
                 <Container>
-                    <Gallery/>
+                    <Gallery language={language}/>
                 </Container>
             </main>
 }
+
+export default Main;

@@ -1,20 +1,17 @@
 import styled from '@emotion/styled';
 import ReactPaginate from 'react-paginate';
-// import { colorStyled } from '../../helpers/colorStyled';
 
 export const StyledReactPaginate = styled(ReactPaginate)`
   display: flex;
   max-width: 295px;
-  padding: 14px 0;
-  margin: 0 auto;
-  margin-botom: 40px;
+  margin: 0px auto 40px  auto;
+  
   justify-content: space-between;
   align-items: center;
   
   @media (min-width: 768px) {
     max-width: 436px;
     padding: 14px 24px;
-    margin-bottom: 80px;
     gap: 15px;
   }
 
@@ -22,8 +19,10 @@ export const StyledReactPaginate = styled(ReactPaginate)`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 28px;
-    height: 28px;
+    max-width: 28px;
+    max-height: 28px;
+    min-width: 15px;
+    min-height: 15px;
     cursor: pointer;
 
     &:hover {
@@ -49,8 +48,10 @@ export const StyledReactPaginate = styled(ReactPaginate)`
     font-size: 12px;
   }
 
-  .previous {
-    margin-right: 24px;
+  .previous,
+  .next {
+    display: none;
+   
 
     &:hover {
       background-color: transparent;

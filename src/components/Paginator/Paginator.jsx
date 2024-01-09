@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { StyledReactPaginate } from './Paginator.styled';
 import {
   MdArrowBackIos,
@@ -19,6 +18,7 @@ export const Paginator = ({ handlePageClick, pageCount, isLoading }) => {
           nextLabel={ <MdOutlineArrowForwardIos fill="rgba(243, 243, 243, 0.30)" size={15} /> }
           onPageChange={ handlePageClick }
           pageCount={ pageCount }
+          pageRangeDisplayed={2}
           previousLabel={ <MdOutlineArrowBackIos fill="rgba(243, 243, 243, 0.30)" size={15} /> }
           renderOnZeroPageCount={ null }
           onPageActive={ (isLoading) && window.scrollTo({ top: 0, behavior: 'smooth', }) }

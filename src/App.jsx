@@ -1,32 +1,17 @@
-import { Route, Routes} from 'react-router-dom';
-import { Container } from './components/Container/Container.styled';
-import { Header } from './components/Header/Header';
-import { Main } from './components/Main/Main';
-import { Footer } from './components/Footer/Footer';
 
+import { Route, Routes } from 'react-router-dom';
+
+import { lazy } from 'react';
+const HomePage = lazy(() => import('../src/pages/HomePage'));
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
-  return  <>
-
-              <Header/>
-              <Main/>
-              {/* <Routes>
-              
-                <Route 
-                  path="/" 
-                  element={ <Main/> }
-                />
-
-                <Route
-                  index
-                  element={ <Main/> }
-                />
-
-              </Routes> */}
-
-              <Footer/>
-              
-          </>
-}
+  
+  return  <Routes>
+            <Route  path ="/" element={ <HomePage />  }/>
+            <Route  path ="#ua" element={ <HomePage />  }/>
+            <Route  path="*"  element={ <ErrorPage /> } />
+          </Routes>
+};
 
 export default App;
