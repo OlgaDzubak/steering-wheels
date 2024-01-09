@@ -19,10 +19,8 @@ export const StyledReactPaginate = styled(ReactPaginate)`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 28px;
-    max-height: 28px;
-    min-width: 15px;
-    min-height: 15px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 
     &:hover {
