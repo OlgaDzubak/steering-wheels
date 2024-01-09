@@ -1,4 +1,4 @@
-import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as A,j as b,b as Mn}from"./index-15d75018.js";var _t={exports:{}},P={};/** @license React v16.13.1
+import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as A,j as b,b as Mn}from"./index-f5260484.js";var _t={exports:{}},P={};/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -254,7 +254,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     border-radius: 25%;
     &:hover,
     &:focus {
-    transform: scale(1.1);  
+        transform: scale(1.1);  
     };
 `,Xa=A(xn)`
     height: 22px;
@@ -273,7 +273,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   padding-right : var(--container-padding);
   padding-top   : 30px;
   padding-bottom: 30px;
-`,to=p.lazy(()=>Mn(()=>import("./Gallery-11914169.js"),["assets/Gallery-11914169.js","assets/index-15d75018.js"])),no=({language:n})=>b.jsx("main",{children:b.jsx(eo,{children:b.jsx(to,{language:n})})}),io=A.footer`
+`,to=p.lazy(()=>Mn(()=>import("./Gallery-bb09ca5f.js"),["assets/Gallery-bb09ca5f.js","assets/index-f5260484.js"])),no=({language:n})=>b.jsx("main",{children:b.jsx(eo,{children:b.jsx(to,{language:n})})}),io=A.footer`
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0px -2px 0px 0px  var(--shadow-color);
@@ -466,13 +466,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: var(--iris);
     transition: var(--transition);
     border: 1px solid var(--text-color);
     border-radius: 25%;
     &:hover,
     &:focus {
-    transform: scale(1.1);
+        transform: scale(1.1);
+    }
 `,fo=A(xn)`
     height: 20px;
     width: 20px;
@@ -485,4 +485,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     height: 20px;
     width: 20px;
     fill: var(--text-color);
-`,vo=({language:n})=>b.jsx(io,{children:b.jsxs(ro,{children:[b.jsxs(ao,{children:[b.jsx(oo,{children:ie.title[n]}),b.jsx(uo,{children:ie.subTitle[n]})]}),b.jsxs(so,{children:[b.jsxs(lo,{children:[b.jsx(Ne,{children:b.jsx(co,{children:ie.address[n]})}),b.jsx(Ne,{children:b.jsx($t,{href:"tel:+38(097)678-13-96",children:"+38 (097) 678-13-96"})}),b.jsx(Ne,{children:b.jsx($t,{href:"tel:+38(050)531-92-76",children:"+38 (050) 531-92-76"})})]}),b.jsxs(po,{children:[b.jsx(Ue,{children:b.jsx(We,{to:"https://www.instagram.com/nataha9754",target:"_blank",rel:"noopener noreferrer",children:b.jsx(fo,{})})}),b.jsx(Ue,{children:b.jsx(We,{to:"viber://chat?number=%2B380976781396",target:"_blank",rel:"noopener noreferrer",children:b.jsx(mo,{})})}),b.jsx(Ue,{children:b.jsx(We,{to:"https://t.me/NatashaLatash",target:"_blank",rel:"noopener noreferrer",children:b.jsx(ho,{})})})]})]})]})}),go=()=>{const[n,e]=Gn("language","ua");p.useEffect(()=>{document.querySelector("html").setAttribute("lang",n),document.querySelector("title").textContent=ie.pageTitle[n]},[n]);const i=r=>{e(r)};return b.jsxs(b.Fragment,{children:[b.jsx(Qa,{language:n,onLanguageChange:i}),b.jsx(no,{language:n}),b.jsx(vo,{language:n})]})},Eo=Object.freeze(Object.defineProperty({__proto__:null,default:go},Symbol.toStringTag,{value:"Module"}));export{Eo as H,ie as c,Wn as k,bo as m};
+`,vo=({language:n})=>b.jsx(io,{children:b.jsxs(ro,{children:[b.jsxs(ao,{children:[b.jsx(oo,{children:ie.title[n]}),b.jsx(uo,{children:ie.subTitle[n]})]}),b.jsxs(so,{children:[b.jsxs(lo,{children:[b.jsx(Ne,{children:b.jsx(co,{children:ie.address[n]})}),b.jsx(Ne,{children:b.jsx($t,{href:"tel:+38(097)678-13-96",children:"+38 (097) 678-13-96"})}),b.jsx(Ne,{children:b.jsx($t,{href:"tel:+38(050)531-92-76",children:"+38 (050) 531-92-76"})})]}),b.jsxs(po,{children:[b.jsx(Ue,{children:b.jsx(We,{href:"https://www.instagram.com/direct/t/17849474219500467",target:"_blank",rel:"noopener noreferrer",children:b.jsx(fo,{})})}),b.jsx(Ue,{children:b.jsx(We,{href:"viber://chat?number=%2B380976781396",target:"_blank",rel:"noopener noreferrer",children:b.jsx(mo,{})})}),b.jsx(Ue,{children:b.jsx(We,{href:"https://t.me/NatashaLatash",target:"_blank",rel:"noopener noreferrer",children:b.jsx(ho,{})})})]})]})]})}),go=()=>{const[n,e]=Gn("language","ua");p.useEffect(()=>{document.querySelector("html").setAttribute("lang",n),document.querySelector("title").textContent=ie.pageTitle[n]},[n]);const i=r=>{e(r)};return b.jsxs(b.Fragment,{children:[b.jsx(Qa,{language:n,onLanguageChange:i}),b.jsx(no,{language:n}),b.jsx(vo,{language:n})]})},Eo=Object.freeze(Object.defineProperty({__proto__:null,default:go},Symbol.toStringTag,{value:"Module"}));export{Eo as H,ie as c,Wn as k,bo as m};
