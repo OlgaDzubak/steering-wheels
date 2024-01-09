@@ -5,7 +5,6 @@ const useLocalStorage=(key, defaultValue)=>{
 const [storedValue, setStoredValue] = useState(()=>{
   
   try {
-    // if (!hash) {
       const value = localStorage.getItem(key);
 
       if (value){
@@ -14,11 +13,6 @@ const [storedValue, setStoredValue] = useState(()=>{
         localStorage.setItem(key, JSON.stringify(defaultValue));
         return defaultValue;
       }
-
-    // }else{
-    //   localStorage.setItem(key, JSON.stringify(hash));
-    //   return hash;
-    // }
   } catch (error) {
       return defaultValue;
   }
