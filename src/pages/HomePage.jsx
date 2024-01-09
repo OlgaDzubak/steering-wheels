@@ -26,7 +26,7 @@ const HomePage = () => {
 
   useEffect(()=>{ 
     if (hash!=language){
-      setLanguage(hash);
+     // setLanguage(hash);
     }
   }, [hash] );
 
