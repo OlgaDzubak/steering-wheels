@@ -18,7 +18,7 @@ const HomePage = () => {
     
     //let path = window.location.pathname;
     //if (path[path.length-1]==="/") path = path.slice(0, path.length-1);    
-    location.href = window.location.pathname + "#" + language;
+    //location.href = window.location.pathname + "#" + language;
 
     document.querySelector("html").setAttribute("lang", language);
     document.querySelector("title").textContent = contentData.pageTitle[language];
