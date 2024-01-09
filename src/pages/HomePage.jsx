@@ -18,6 +18,7 @@ const HomePage = () => {
   const [language, setLanguage] = useLocalStorage("language", hash, "ua");
 
   useEffect(()=>{ 
+    console.log(" HomePage useEffect");
     location.href = path + "#" + language;
     document.querySelector("html").setAttribute("lang", language);
     document.querySelector("title").textContent = contentData.pageTitle[language];
