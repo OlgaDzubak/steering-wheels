@@ -1,4 +1,4 @@
-import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as A,j as b,b as Mn}from"./index-6d0fc2f2.js";var _t={exports:{}},P={};/** @license React v16.13.1
+import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as A,j as b,b as Mn}from"./index-f0f73f69.js";var _t={exports:{}},P={};/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -47,7 +47,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     align-items: center;
     }
 
-`;const za=()=>({container:(n,e)=>({...n}),control:(n,e)=>({...n,display:"flex",padding:"0px 0px 0px 0px",fontWeight:"400",fontSize:"12px",color:"var(--text-color)",border:"none",backgroundColor:"transparent"})}),Na=A.div`
+`;const za=()=>({container:n=>({...n}),control:n=>({display:"flex",padding:"0px 0px 0px 0px",fontWeight:"400",fontSize:"12px",color:"var(--text-color)",backgroundColor:"transparent"}),option:()=>({padding:"5px 5px 5px 5px",fontSize:"12px",backgroundColor:"transparent",color:"var(--text-color)",cursor:"default",transition:"color var(--transition)",":hover":{backgroundColor:"var(--back-color)"},":active":{backgroundColor:"var(--back-color)"}})}),Na=A.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -273,7 +273,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   padding-right : var(--container-padding);
   padding-top   : 30px;
   padding-bottom: 30px;
-`,to=p.lazy(()=>Mn(()=>import("./Gallery-f00ebb93.js"),["assets/Gallery-f00ebb93.js","assets/index-6d0fc2f2.js"])),no=({language:n})=>b.jsx("main",{children:b.jsx(eo,{children:b.jsx(to,{language:n})})}),io=A.footer`
+`,to=p.lazy(()=>Mn(()=>import("./Gallery-ab37cb48.js"),["assets/Gallery-ab37cb48.js","assets/index-f0f73f69.js"])),no=({language:n})=>b.jsx("main",{children:b.jsx(eo,{children:b.jsx(to,{language:n})})}),io=A.footer`
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0px -2px 0px 0px  var(--shadow-color);

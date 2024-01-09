@@ -99,7 +99,10 @@ Error generating stack: `+i.message+`
   }
 
     :root {
+    
     --text-color: rgba(30, 30, 30);
+    --back-color: rgba(30, 30, 30, 0.1);
+
     --whitefifty-color: rgba(243, 243, 243, 0.5);
     --whitefourty-color: rgba(243, 243, 243, 0.4);
     --whitetwenty-color: rgba(243, 243, 243, 0.2);
@@ -181,4 +184,4 @@ screen and (min-resolution : 1dppx) and (max-width: 767.8px){
     font-size: 16px;
     line-height: 1;
   }
-`,Qv=()=>Ze.jsx(Wv,{children:Ze.jsx(Hv,{children:"Page not found! Please chech the path and try again."})}),Kv=$.lazy(()=>b1(()=>import("./HomePage-dcdf6782.js").then(e=>e.H),[]));function Yv(){return Ze.jsxs(W0,{children:[Ze.jsx(Su,{path:"/",element:Ze.jsx(Kv,{})}),Ze.jsx(Su,{path:"*",element:Ze.jsx(Qv,{})})]})}xu.createRoot(document.getElementById("root")).render(Ze.jsx(Je.StrictMode,{children:Ze.jsxs(Q0,{basename:"/steering-wheels",children:[Ze.jsx(Z1,{}),Ze.jsx(Yv,{})]})}));export{Zv as E,Je as R,zu as _,i0 as a,b1 as b,Xv as c,Gv as d,Ip as g,Rp as h,Y0 as i,Ze as j,gi as n,$ as r,$p as s};
+`,Qv=()=>Ze.jsx(Wv,{children:Ze.jsx(Hv,{children:"Page not found! Please chech the path and try again."})}),Kv=$.lazy(()=>b1(()=>import("./HomePage-8c0efb2c.js").then(e=>e.H),[]));function Yv(){return Ze.jsxs(W0,{children:[Ze.jsx(Su,{path:"/",element:Ze.jsx(Kv,{})}),Ze.jsx(Su,{path:"*",element:Ze.jsx(Qv,{})})]})}xu.createRoot(document.getElementById("root")).render(Ze.jsx(Je.StrictMode,{children:Ze.jsxs(Q0,{basename:"/steering-wheels",children:[Ze.jsx(Z1,{}),Ze.jsx(Yv,{})]})}));export{Zv as E,Je as R,zu as _,i0 as a,b1 as b,Xv as c,Gv as d,Ip as g,Rp as h,Y0 as i,Ze as j,gi as n,$ as r,$p as s};
