@@ -12,23 +12,23 @@ import Footer from '../components/Footer/Footer';
 const HomePage = () => {
  
   const [language, setLanguage] = useLocalStorage("language", "ua");
-  const [hash] = useState(()=>{return getHash("language", "ua")});
+  //const [hash] = useState(()=>{return getHash("language", "ua")});
 
   useEffect(()=>{ 
     
-    let path = window.location.pathname;
-    if (path[path.length-1]==="/") path = path.slice(0, path.length-1);    
-    location.href = path + "#" + language;
+    //let path = window.location.pathname;
+    //if (path[path.length-1]==="/") path = path.slice(0, path.length-1);    
+    location.href = window.location.pathname + "#" + language;
 
     document.querySelector("html").setAttribute("lang", language);
     document.querySelector("title").textContent = contentData.pageTitle[language];
   }, [language] );
 
-  useEffect(()=>{ 
-    if (hash!=language){
-     // setLanguage(hash);
-    }
-  }, [hash] );
+  // useEffect(()=>{ 
+  //   if (hash!=language){
+  //    // setLanguage(hash);
+  //   }
+  // }, [hash] );
 
   const onLanguageChange = (value) => { 
     setLanguage(value);    
