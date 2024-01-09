@@ -49,22 +49,28 @@ export const TitleAndContacts = styled.div`
 
 export const SelectStyles = () => {
 return {
-    container: (baseStyles, state)  =>({
-        ...baseStyles,
-
+    container: (baseStyles)  =>({
+       ...baseStyles,
     }),
-    control: (baseStyles, state) => ({
-      ...baseStyles,
+    control: (baseStyles) => ({
       display: 'flex',
       padding: '0px 0px 0px 0px',
       fontWeight: '400',
       fontSize: '12px',
-      color: 'var(--text-color)',
-      border: 'none',
+      color: `var(--text-color)`,
       backgroundColor: 'transparent',
-    //   borderColor: 'var(--text-color)',
-    //   borderRadius: '10px',
-    })};
+    }),
+    option: () => ({
+        padding: '5px 5px 5px 5px',
+        fontSize: '12px',
+        backgroundColor: 'transparent',
+        color: `var(--text-color)`,
+        cursor: 'default',
+        transition: `color var(--transition)`,
+        ':hover' : { backgroundColor: `var(--back-color)` },
+        ':active': { backgroundColor: `var(--back-color)` },
+        }),
+        };
 };
 
 

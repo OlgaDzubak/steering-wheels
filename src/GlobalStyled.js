@@ -32,7 +32,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
     :root {
+    
     --text-color: rgba(30, 30, 30);
+    --back-color: rgba(30, 30, 30, 0.1);
+
     --whitefifty-color: rgba(243, 243, 243, 0.5);
     --whitefourty-color: rgba(243, 243, 243, 0.4);
     --whitetwenty-color: rgba(243, 243, 243, 0.2);
