@@ -22,10 +22,7 @@ const Header = ({language, onLanguageChange}) => {
 
 
     const handleLanguageChange = (option, action) => {
-        // if (option) onLanguageChange(option.value);
-        //   else 
           onLanguageChange(option.value);
-      
     }
 
 

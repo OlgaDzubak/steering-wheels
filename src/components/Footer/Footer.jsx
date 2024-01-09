@@ -38,19 +38,19 @@ const Footer = ({language}) => {
                         < SocialLinks_ul>
 
                             < SocialLinks_li>
-                                < SocialLinks_A to="https://www.instagram.com/nataha9754" target='_blank' rel='noopener noreferrer'>
+                                < SocialLinks_A href="https://www.instagram.com/direct/t/17849474219500467" target='_blank' rel='noopener noreferrer'>
                                     <StyledInstagramSVG />
                                 </SocialLinks_A>
                             </SocialLinks_li>
 
                             < SocialLinks_li>
-                                < SocialLinks_A to="viber://chat?number=%2B380976781396" target='_blank' rel='noopener noreferrer'>
+                                < SocialLinks_A href="viber://chat?number=%2B380976781396" target='_blank' rel='noopener noreferrer'>
                                     <StyledViberSVG />
                                 </SocialLinks_A>
                             </SocialLinks_li>
 
                             < SocialLinks_li>
-                                < SocialLinks_A to="https://t.me/NatashaLatash" target='_blank' rel='noopener noreferrer'>
+                                < SocialLinks_A href="https://t.me/NatashaLatash" target='_blank' rel='noopener noreferrer'>
                                     <StyledTelegramSVG />
                                 </SocialLinks_A>
                             </SocialLinks_li>

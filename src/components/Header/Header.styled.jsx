@@ -301,7 +301,7 @@ export const SocialLinks_A = styled.a`
     border-radius: 25%;
     &:hover,
     &:focus {
-    transform: scale(1.1);  
+        transform: scale(1.1);  
     };
 `;
 export const StyledInstagramSVG = styled(InstagramIMG)`
