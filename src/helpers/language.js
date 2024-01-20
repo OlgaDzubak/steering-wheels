@@ -16,6 +16,10 @@ const contentData = {
             ua : "м. Дніпро",
             ru : "г. Днепр",
         },
+        galleryTitle : {
+            ua : "Галерея виконаних робіт",
+            ru : "Галерея выполненных работ",
+        },
         descriptionField : {
             ua : "photo_description_ua",
             ru : "photo_description_ru",

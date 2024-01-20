@@ -79,7 +79,7 @@ return {
 export const Header_TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    //margin-bottom: 10px;
     align-items : center;
 
     @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1399.8px),
@@ -97,6 +97,19 @@ export const Header_TitleContainer = styled.div`
     } 
 
 `;
+export const Header_LeftContainer =styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 25px;  
+
+    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
+    screen and (min-resolution : 96dpi) and (max-width: 767.8px),
+    screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+        align-items: center;
+    }
+`;
+
 export const Header_Title = styled.h1`
     margin-top:-10px;
     margin-bottom: 15px;
@@ -194,7 +207,6 @@ export const Header_ContactsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     row-gap: 25px;
-    
 
     @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
     screen and (min-resolution : 96dpi) and (max-width: 767.8px),
@@ -207,7 +219,7 @@ export const Header_ContactsContainer = styled.div`
       screen and (min-resolution : 96dpi) and (min-width: 768px),
       screen and (min-resolution : 1dppx) and (min-width: 768px){
           row-gap: 15px;
-          align-items: flex-end;
+          align-items: flex-start;
       }
 
 `;

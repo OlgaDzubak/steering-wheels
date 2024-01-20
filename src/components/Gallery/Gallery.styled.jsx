@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Gallery_ul = styled.ul`
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;

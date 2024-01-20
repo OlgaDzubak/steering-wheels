@@ -1,14 +1,18 @@
 import { lazy } from 'react';
 const Gallery = lazy(() => import('../../../src/components/Gallery/Gallery'));
-import { Container } from './Main.styled';
+import { Container, GalleryTitle } from './Main.styled';
+import contentData from '../../helpers/language';
 
 
 const Main = ({language}) => {
 
     return  <main>
-                <Container>
-                    <Gallery language={language}/>
-                </Container>
+                <section>
+                    <Container>
+                        <GalleryTitle>{contentData.galleryTitle[language]}</GalleryTitle>
+                        <Gallery language={language}/>
+                    </Container>
+                </section> 
             </main>
 }
 
