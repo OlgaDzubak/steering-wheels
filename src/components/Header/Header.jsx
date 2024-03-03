@@ -4,7 +4,7 @@ import {    Header_,
             Container, 
             SelectStyles,
             Header_TitleContainer, 
-            Header_LeftContainer,
+            Header_RightContainer,
             Header_Title, 
             Header_SubTitle,
             Header_Contacts_ul, 
@@ -36,16 +36,17 @@ const Header = ({language, onLanguageChange}) => {
                         <Header_SubTitle>{contentData.subTitle[language]}</Header_SubTitle>
                     </Header_TitleContainer>
 
-                    <Header_LeftContainer>
+                    <Header_RightContainer>
 
                         < Header_ContactsContainer>
                             
-                            <Header_P>{contentData.address[language]}</Header_P>
-
-                            < Header_Contacts_ul>
-                                <Header_Contacts_li><Header_A href="tel:+38(097)678-13-96">+38 (097) 678-13-96</Header_A></Header_Contacts_li>
-                                <Header_Contacts_li><Header_A href="tel:+38(050)531-92-76">+38 (050) 531-92-76</Header_A></Header_Contacts_li>
-                            </Header_Contacts_ul>
+                            <address>
+                                <Header_P>{contentData.address[language]}</Header_P>
+                                < Header_Contacts_ul>
+                                    <Header_Contacts_li><Header_A href="tel:+38(097)678-13-96">+38 (097) 678-13-96</Header_A></Header_Contacts_li>
+                                    <Header_Contacts_li><Header_A href="tel:+38(050)531-92-76">+38 (050) 531-92-76</Header_A></Header_Contacts_li>
+                                </Header_Contacts_ul>
+                            </address>
 
                             < SocialLinks_ul>
 
@@ -79,7 +80,8 @@ const Header = ({language, onLanguageChange}) => {
                                     styles={SelectStyles()} 
                                     name = {"languages"}
                         />
-                    </Header_LeftContainer>
+
+                    </Header_RightContainer>
 
                 </Container>
                 

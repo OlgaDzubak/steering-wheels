@@ -28,12 +28,14 @@ const Footer = ({language}) => {
                     </Footer_TitleContainer>
 
                     < Footer_ContactsContainer>
-        
-                        < Footer_Contacts_ul >
-                            <Footer_Contacts_li><Footer_P>{contentData.address[language]}</Footer_P></Footer_Contacts_li>
-                            <Footer_Contacts_li><Footer_A href="tel:+38(097)678-13-96">+38 (097) 678-13-96</Footer_A></Footer_Contacts_li>
-                            <Footer_Contacts_li><Footer_A href="tel:+38(050)531-92-76">+38 (050) 531-92-76</Footer_A></Footer_Contacts_li>
-                        </Footer_Contacts_ul>
+                    
+                        <address>
+                            <Footer_P>{contentData.address[language]}</Footer_P>
+                            < Footer_Contacts_ul >
+                                <Footer_Contacts_li><Footer_A href="tel:+38(097)678-13-96">+38 (097) 678-13-96</Footer_A></Footer_Contacts_li>
+                                <Footer_Contacts_li><Footer_A href="tel:+38(050)531-92-76">+38 (050) 531-92-76</Footer_A></Footer_Contacts_li>
+                            </Footer_Contacts_ul>
+                        </address>
 
                         < SocialLinks_ul>
 
@@ -56,9 +58,8 @@ const Footer = ({language}) => {
                             </SocialLinks_li>
 
                         </SocialLinks_ul>
-
+                       
                     </Footer_ContactsContainer>
-
 
                 </Container>
             </Footer_>

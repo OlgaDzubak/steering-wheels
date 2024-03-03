@@ -6,10 +6,10 @@ import { ReactComponent as TelegramIMG  } from '../../assets/images/link_icons/t
 
 
 export const Header_ = styled.header`
-
     padding-top: 30px;
     box-shadow: 0px 2px 0px 0px var(--shadow-color);
 `;
+
 export const Container = styled.div`
 
     padding-left : var(--container-padding);
@@ -97,7 +97,7 @@ export const Header_TitleContainer = styled.div`
     } 
 
 `;
-export const Header_LeftContainer =styled.div`
+export const Header_RightContainer =styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -250,6 +250,15 @@ export const Header_Contacts_li = styled.li`
 export const Header_P = styled.p`
     font-weight: 600;
     text-wrap:nowrap;
+    margin-bottom: 11px;
+    text-align: center;
+
+    @media screen and (min-device-pixel-ratio: 1) and (min-width: 767.8px),
+    screen and (min-resolution : 96dpi) and (min-width: 767.8px),
+    screen and (min-resolution : 1dppx) and (min-width: 767.8px){
+        text-align: left;
+    }
+
 `;
 export const Header_A = styled.a`
     padding-top: 3px;

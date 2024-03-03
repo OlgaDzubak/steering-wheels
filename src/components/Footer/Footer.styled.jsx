@@ -171,13 +171,19 @@ export const Footer_Contacts_li = styled.li`
 export const Footer_P = styled.p`
     font-weight: 600;
     font-size: 12px;
+    margin-bottom: 5px;
+    text-align: center;
 
     @media screen and (min-device-pixel-ratio: 1) and (min-width: 419.8px) and (max-width: 908.8px),
     screen and (min-resolution : 96dpi) and (min-width: 419.8px) and(max-width: 908.8px),
     screen and (min-resolution : 1dppx) and (min-width: 419.8px) and (max-width: 908.8px){
         font-size: 13px;
     }
-
+    @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
+    screen and (min-resolution : 96dpi) and (min-width: 768px),
+    screen and (min-resolution : 1dppx) and (min-width: 768px){
+        text-align: left;
+    }  
     @media screen and (min-device-pixel-ratio: 1) and (min-width:909px),
     screen and (min-resolution : 96dpi) and (min-width: 909px),
     screen and (min-resolution : 1dppx) and (min-width: 909px){
