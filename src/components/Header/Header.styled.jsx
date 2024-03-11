@@ -101,7 +101,7 @@ export const Header_RightContainer =styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    row-gap: 25px;  
+    row-gap: 25px;
 
     @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
     screen and (min-resolution : 96dpi) and (max-width: 767.8px),
@@ -153,7 +153,7 @@ export const Header_Title = styled.h1`
         font-size: 52px;
     }     
 `;
-export const Header_SubTitle = styled.h3`
+export const Header_SubTitle = styled.h2`
     
 
     @media screen and (min-device-pixel-ratio: 1) and (max-width: 299.8px),
@@ -179,8 +179,8 @@ export const Header_SubTitle = styled.h3`
     }
 
     @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 908.8px),
-    screen and (min-resolution : 96dpi) and  (min-width: 420px) and (max-width: 908.8px),
-    screen and (min-resolution : 1dppx) and  (min-width: 420px) and (max-width: 908.8px){
+    screen and (min-resolution : 96dpi) and  (min-width: 768px) and (max-width: 908.8px),
+    screen and (min-resolution : 1dppx) and  (min-width:  768px) and (max-width: 908.8px){
         font-size: 16px;
     }
 
@@ -244,9 +244,6 @@ export const Header_Contacts_ul = styled.ul`
         justify-content: center;
     }
 `;
-export const Header_Contacts_li = styled.li`
-
-`;
 export const Header_P = styled.p`
     font-weight: 600;
     text-wrap:nowrap;
@@ -275,13 +272,13 @@ export const Header_A = styled.a`
     @media screen and (min-device-pixel-ratio: 1) and (min-width: 419.8px) and (max-width: 908.8px),
     screen and (min-resolution : 96dpi) and (min-width: 419.8px) and(max-width: 908.8px),
     screen and (min-resolution : 1dppx) and (min-width: 419.8px) and (max-width: 908.8px){
-        font-size: 14px;
+        font-size: 16px;
     }
 
     @media screen and (min-device-pixel-ratio: 1) and (min-width:909px) and (max-width: 1399.8px),
     screen and (min-resolution : 96dpi) and (min-width: 909px) and (max-width: 1399.8px),
     screen and (min-resolution : 1dppx) and (min-width: 909px) and (max-width: 1399.8px){
-        font-size: 15px;
+        font-size: 17px;
         
     }  
     
@@ -339,4 +336,5 @@ export const StyledTelegramSVG = styled(TelegramIMG)`
     height: 22px;
     width: 22px;
     fill: var(--text-color);
+    
 `;

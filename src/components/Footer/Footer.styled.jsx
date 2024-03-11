@@ -82,7 +82,7 @@ export const Footer_Title = styled.h3`
     }     
 `;
 
-export const Footer_SubTitle = styled.h5`
+export const Footer_SubTitle = styled.h4`
     text-align: center;
 
     @media screen and (min-device-pixel-ratio: 1) and (max-width: 299.8px),
@@ -132,16 +132,10 @@ export const Footer_ContactsContainer = styled.div`
     screen and (min-resolution : 1dppx) and (max-width: 767.8px){
         align-items: center;
     }
-
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-      screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-      screen and (min-resolution : 1dppx) and (max-width: 767.8px){
-        align-items: center;
-    }
       
-      @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1399.8px),
-      screen and (min-resolution : 96dpi) and (min-width: 768px) and (max-width: 1399.8px),
-      screen and (min-resolution : 1dppx) and (min-width: 768px) and (max-width: 1399.8px){
+    @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1399.8px),
+    screen and (min-resolution : 96dpi) and (min-width: 768px) and (max-width: 1399.8px),
+    screen and (min-resolution : 1dppx) and (min-width: 768px) and (max-width: 1399.8px){
         row-gap: 15px;
     }
 `;
@@ -165,8 +159,6 @@ export const Footer_Contacts_ul = styled.ul`
         column-gap: 15px;
         align-items: center;
     }
-`;
-export const Footer_Contacts_li = styled.li`
 `;
 export const Footer_P = styled.p`
     font-weight: 600;
