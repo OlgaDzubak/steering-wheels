@@ -160,6 +160,8 @@ export const Footer_Contacts_ul = styled.ul`
         align-items: center;
     }
 `;
+export const Footer_Contacts_li = styled.li`
+`;
 export const Footer_P = styled.p`
     font-weight: 600;
     font-size: 12px;

@@ -244,6 +244,8 @@ export const Header_Contacts_ul = styled.ul`
         justify-content: center;
     }
 `;
+export const Header_Contacts_li = styled.li`
+`;
 export const Header_P = styled.p`
     font-weight: 600;
     text-wrap:nowrap;
