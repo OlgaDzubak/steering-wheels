@@ -1,4 +1,4 @@
-import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as D,j as b,b as Mn}from"./index-c1bf58a3.js";var jt={exports:{}},P={};/** @license React v16.13.1
+import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as D,j as b,b as Mn}from"./index-294ecf12.js";var jt={exports:{}},P={};/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -70,7 +70,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    row-gap: 25px;  
+    row-gap: 25px;
 
     @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
     screen and (min-resolution : 96dpi) and (max-width: 767.8px),
@@ -119,7 +119,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     screen and (min-resolution : 1dppx) and (min-width: 1400px){
         font-size: 52px;
     }     
-`,Ga=D.h3`
+`,Ga=D.h2`
     
 
     @media screen and (min-device-pixel-ratio: 1) and (max-width: 299.8px),
@@ -145,8 +145,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
 
     @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 908.8px),
-    screen and (min-resolution : 96dpi) and  (min-width: 420px) and (max-width: 908.8px),
-    screen and (min-resolution : 1dppx) and  (min-width: 420px) and (max-width: 908.8px){
+    screen and (min-resolution : 96dpi) and  (min-width: 768px) and (max-width: 908.8px),
+    screen and (min-resolution : 1dppx) and  (min-width:  768px) and (max-width: 908.8px){
         font-size: 16px;
     }
 
@@ -204,7 +204,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         justify-content: center;
     }
 `,Lt=D.li`
-
 `,Ka=D.p`
     font-weight: 600;
     text-wrap:nowrap;
@@ -232,13 +231,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     @media screen and (min-device-pixel-ratio: 1) and (min-width: 419.8px) and (max-width: 908.8px),
     screen and (min-resolution : 96dpi) and (min-width: 419.8px) and(max-width: 908.8px),
     screen and (min-resolution : 1dppx) and (min-width: 419.8px) and (max-width: 908.8px){
-        font-size: 14px;
+        font-size: 16px;
     }
 
     @media screen and (min-device-pixel-ratio: 1) and (min-width:909px) and (max-width: 1399.8px),
     screen and (min-resolution : 96dpi) and (min-width: 909px) and (max-width: 1399.8px),
     screen and (min-resolution : 1dppx) and (min-width: 909px) and (max-width: 1399.8px){
-        font-size: 15px;
+        font-size: 17px;
         
     }  
     
@@ -286,6 +285,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     height: 22px;
     width: 22px;
     fill: var(--text-color);
+    
 `,eo=({language:n,onLanguageChange:e})=>{const i=(r,t)=>{e(r.value)};return b.jsx(ka,{children:b.jsxs(Ha,{children:[b.jsxs(Na,{children:[b.jsx(Wa,{children:ie.title[n]}),b.jsx(Ga,{children:ie.subTitle[n]})]}),b.jsxs(Ua,{children:[b.jsxs(Ya,{children:[b.jsxs("address",{children:[b.jsx(Ka,{children:ie.address[n]}),b.jsxs(qa,{children:[b.jsx(Lt,{children:b.jsx(Tt,{href:"tel:+38(097)678-13-96",children:"+38 (097) 678-13-96"})}),b.jsx(Lt,{children:b.jsx(Tt,{href:"tel:+38(050)531-92-76",children:"+38 (050) 531-92-76"})})]})]}),b.jsxs(Xa,{children:[b.jsx(ke,{children:b.jsx(He,{href:"https://www.instagram.com/nataha9754",target:"_blank",rel:"noopener noreferrer",children:b.jsx(Za,{})})}),b.jsx(ke,{children:b.jsx(He,{href:"viber://chat?number=%2B380976781396",target:"_blank",rel:"noopener noreferrer",children:b.jsx(Ja,{})})}),b.jsx(ke,{children:b.jsx(He,{href:"https://t.me/NatashaLatash",target:"_blank",rel:"noopener noreferrer",children:b.jsx(Qa,{})})})]})]}),b.jsx(_a,{isSearchable:!1,placeholder:n,options:[{value:"ua",label:"ua"},{value:"ru",label:"ru"}],onChange:i,styles:za(),name:"languages"})]})]})})},to=D.div`
   padding-left  : var(--container-padding);
   padding-right : var(--container-padding);
@@ -301,7 +301,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-`,io=p.lazy(()=>Mn(()=>import("./Gallery-3c3fd6c1.js"),["assets/Gallery-3c3fd6c1.js","assets/index-c1bf58a3.js"])),ro=({language:n})=>b.jsx("main",{children:b.jsx("section",{children:b.jsxs(to,{children:[b.jsx(no,{children:ie.galleryTitle[n]}),b.jsx(io,{language:n})]})})}),ao=D.footer`
+`,io=p.lazy(()=>Mn(()=>import("./Gallery-9b360494.js"),["assets/Gallery-9b360494.js","assets/index-294ecf12.js"])),ro=({language:n})=>b.jsx("main",{children:b.jsx("section",{children:b.jsxs(to,{children:[b.jsx(no,{children:ie.galleryTitle[n]}),b.jsx(io,{language:n})]})})}),ao=D.footer`
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0px -2px 0px 0px  var(--shadow-color);
@@ -367,7 +367,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     screen and (min-resolution : 1dppx) and (min-width: 1400px){
         font-size: 32px;
     }     
-`,lo=D.h5`
+`,lo=D.h4`
     text-align: center;
 
     @media screen and (min-device-pixel-ratio: 1) and (max-width: 299.8px),
@@ -411,16 +411,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     screen and (min-resolution : 1dppx) and (max-width: 767.8px){
         align-items: center;
     }
-
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-      screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-      screen and (min-resolution : 1dppx) and (max-width: 767.8px){
-        align-items: center;
-    }
       
-      @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1399.8px),
-      screen and (min-resolution : 96dpi) and (min-width: 768px) and (max-width: 1399.8px),
-      screen and (min-resolution : 1dppx) and (min-width: 768px) and (max-width: 1399.8px){
+    @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1399.8px),
+    screen and (min-resolution : 96dpi) and (min-width: 768px) and (max-width: 1399.8px),
+    screen and (min-resolution : 1dppx) and (min-width: 768px) and (max-width: 1399.8px){
         row-gap: 15px;
     }
 `,po=D.ul`
