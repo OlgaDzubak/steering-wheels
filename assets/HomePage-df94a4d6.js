@@ -1,4 +1,4 @@
-import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as D,j as b,b as Mn}from"./index-6553958f.js";var jt={exports:{}},P={};/** @license React v16.13.1
+import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as D,j as b,b as Mn}from"./index-3f2cdcc6.js";var jt={exports:{}},P={};/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -266,7 +266,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     align-items: center;
     width: 100%;
     height: 100%;
-    transition: var(--transition);
+    transition: transform var(--transition);
     border: 1px solid var(--text-color);
     border-radius: 25%;
     &:hover,
@@ -301,7 +301,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-`,io=p.lazy(()=>Mn(()=>import("./Gallery-50e4849a.js"),["assets/Gallery-50e4849a.js","assets/index-6553958f.js"])),ro=({language:n})=>b.jsx("main",{children:b.jsx("section",{children:b.jsxs(to,{children:[b.jsx(no,{children:ie.galleryTitle[n]}),b.jsx(io,{language:n})]})})}),ao=D.footer`
+`,io=p.lazy(()=>Mn(()=>import("./Gallery-7ae81917.js"),["assets/Gallery-7ae81917.js","assets/index-3f2cdcc6.js"])),ro=({language:n})=>b.jsx("main",{children:b.jsx("section",{children:b.jsxs(to,{children:[b.jsx(no,{children:ie.galleryTitle[n]}),b.jsx(io,{language:n})]})})}),ao=D.footer`
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0px -2px 0px 0px  var(--shadow-color);
