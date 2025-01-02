@@ -6,6 +6,7 @@ import {Gallery_ul} from '../Gallery/Gallery.styled';
 import getPhotos from '../../api_operations/getPhotos';
 import GalleryItem from "../GalleryItem/GalleryItem";
 import Paginator from "../Paginator/Paginator";
+import FsLightbox from "fslightbox-react";
 
 
 const Gallery = ({language}) => {
@@ -16,6 +17,7 @@ const Gallery = ({language}) => {
   const [perPage] = useState(window.innerWidth < 768 ? 5 : (window.innerWidth < 1100 ? 6 : 9));
   const [IsLoading, setIsLoading] = useState(false);
   const [IsEmpty, setIsEmpty] = useState(false);
+  const [lightboxController, setLightboxController] = useState({toggler: false, slide: 1});
 
   useEffect(() => {
     const fetchPhotos = async () => {
@@ -50,17 +52,42 @@ const Gallery = ({language}) => {
         }
   };
 
+
+  function openLightboxOnSlide(number) {
+		setLightboxController({
+			toggler: !lightboxController.toggler,
+			slide: number
+		});
+	}
   
   return  <>
               { (!IsEmpty)  ?
                             <>
-                            
-                              <Gallery_ul>  { photos.map((item) => { 
-                                      return <GalleryItem _id={item._id} url={item.photo_url} alt={item[contentData.descriptionField[language]]} key={item._id} />})
-                                    }
+                              <Gallery_ul>  { photos.map((item, idx) => { 
+                                  return <GalleryItem 
+                                                  _id={item._id} 
+                                                  url={item.photo_url} 
+                                                  alt={item[contentData.descriptionField[language]]} 
+                                                  key={item._id}
+                                                  onGalleryItemClick = {()=>{openLightboxOnSlide(idx+1)}}
+                                          />})
+                                }
                               </Gallery_ul>
 
-                              <Paginator pageCount={Math.ceil(total/perPage)} handlePageClick={onClickPaginator} isLoading={IsLoading}/>
+                              <FsLightbox toggler={lightboxController.toggler}
+                                          slide={lightboxController.slide}
+                                          sources={photos.map((item) => { return <img src={item.photo_url} 
+                                                                                      alt={item[contentData.descriptionField[language]]} 
+                                                                                  />
+                                                                        })}
+
+
+                              />
+
+                              <Paginator pageCount={Math.ceil(total/perPage)} 
+                                        handlePageClick={onClickPaginator} 
+                                        isLoading={IsLoading}
+                              />
 
                             </>
 
