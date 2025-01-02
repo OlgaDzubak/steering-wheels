@@ -316,7 +316,7 @@ export const SocialLinks_A = styled.a`
     align-items: center;
     width: 100%;
     height: 100%;
-    transition: var(--transition);
+    transition: transform var(--transition);
     border: 1px solid var(--text-color);
     border-radius: 25%;
     &:hover,
