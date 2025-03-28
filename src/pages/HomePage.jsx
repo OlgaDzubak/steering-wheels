@@ -11,7 +11,9 @@ const HomePage = () => {
   const [language, setLanguage] = useLocalStorage("language", "ua");
 
   useEffect(()=>{ 
-    
+    if (!(language === 'ua' || language === 'ru')) {
+     setLanguage('ua');
+    }
     document.querySelector("html").setAttribute("lang", language);
     document.querySelector("title").textContent = contentData.pageTitle[language];
   }, [language] );
