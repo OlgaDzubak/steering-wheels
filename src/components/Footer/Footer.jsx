@@ -32,27 +32,27 @@ const Footer = ({language}) => {
                         <address>
                             <Footer_P>{contentData.address[language]}</Footer_P>
                             < Footer_Contacts_ul >
-                                <Footer_Contacts_li><Footer_A href="tel:+38(097)678-13-96">+38 (097) 678-13-96</Footer_A></Footer_Contacts_li>
-                                <Footer_Contacts_li><Footer_A href="tel:+38(050)531-92-76">+38 (050) 531-92-76</Footer_A></Footer_Contacts_li>
+                                <Footer_Contacts_li><Footer_A href="tel:+38(097)678-13-96" aria-label="Telephone us at 38-097-678-13-96">+38 (097) 678-13-96</Footer_A></Footer_Contacts_li>
+                                <Footer_Contacts_li><Footer_A href="tel:+38(050)531-92-76" aria-label="Telephone us at 38-050-531-92-76">+38 (050) 531-92-76</Footer_A></Footer_Contacts_li>
                             </Footer_Contacts_ul>
                         </address>
 
                         < SocialLinks_ul>
 
                             < SocialLinks_li>
-                                < SocialLinks_A href="https://www.instagram.com/direct/t/17849474219500467" target='_blank' rel='noopener noreferrer'>
+                                < SocialLinks_A href="https://www.instagram.com/direct/t/17849474219500467" aria-label="Write to us on Instagram" target='_blank' rel='noopener noreferrer'>
                                     <StyledInstagramSVG />
                                 </SocialLinks_A>
                             </SocialLinks_li>
 
                             < SocialLinks_li>
-                                < SocialLinks_A href="viber://chat?number=%2B380976781396" target='_blank' rel='noopener noreferrer'>
+                                < SocialLinks_A href="viber://chat?number=%2B380976781396" aria-label="Write to us on Viber" target='_blank' rel='noopener noreferrer'>
                                     <StyledViberSVG />
                                 </SocialLinks_A>
                             </SocialLinks_li>
 
                             < SocialLinks_li>
-                                < SocialLinks_A href="https://t.me/NatashaLatash" target='_blank' rel='noopener noreferrer'>
+                                < SocialLinks_A href="https://t.me/NatashaLatash" aria-label="Write to us on Telegram" target='_blank' rel='noopener noreferrer'>
                                     <StyledTelegramSVG />
                                 </SocialLinks_A>
                             </SocialLinks_li>

@@ -57,7 +57,6 @@ export const SelectStyles = () => {
     return {
         container: (baseStyles)  =>({
         ...baseStyles,
-        width: '70px',
         }),
         control: (baseStyles) => ({
         display: 'flex',
@@ -76,17 +75,6 @@ export const SelectStyles = () => {
             transition: `color var(--transition)`,
             ':hover' : { backgroundColor: `var(--back-color)` },
             ':active': { backgroundColor: `var(--back-color)` },
-        }),
-        input: (provided) => ({
-            ...provided,
-            width: '100%',
-            padding: 10,
-            margin: 0,
-            border: 'none',
-        }),
-        clearIndicator: (baseStyles)=>({
-            ...baseStyles,
-            display: 'none',          
         }),
     };
 };
