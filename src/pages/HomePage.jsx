@@ -13,7 +13,9 @@ const HomePage = () => {
   useEffect(()=>{ 
     
     document.querySelector("html").setAttribute("lang", language);
+    document.querySelector('meta[name="description"]').setAttribute("content", contentData.metaDescription[language]);
     document.querySelector("title").textContent = contentData.pageTitle[language];
+    
   }, [language] );
 
   const onLanguageChange = (value) => { 
