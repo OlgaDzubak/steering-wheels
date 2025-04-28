@@ -106,20 +106,19 @@ Error generating stack: `+o.message+`
     
     --text-color: rgba(30, 30, 30);
     --back-color: rgba(30, 30, 30, 0.1);
+    --shadow-color: rgba(200, 200, 200, 0.7);
+    --whitetwenty-color: rgba(243, 243, 243, 0.2);
 
     --whitefifty-color: rgba(243, 243, 243, 0.5);
     --whitefourty-color: rgba(243, 243, 243, 0.4);
-    --whitetwenty-color: rgba(243, 243, 243, 0.2);
-    --blue-color: #161F37;
-    --bluefifty-color: rgba(22, 31, 55, 0.5);
-    --hovergreen-color: rgba(64, 112, 205, 0.5);
-    --welcomepagetext-color: #FAFAFA;
-    --mainbackground-color: #F3F3F3;
-    --buttoncancel-color: #434D67;
-    --red-color: rgba(218, 20, 20, 0.5);
-    --green-color: rgba(60, 188, 129, 0.5);
-    --shadow-color: rgba(200, 200, 200, 0.7);
-
+    
+    // --blue-color: #161F37;
+    // --bluefifty-color: rgba(22, 31, 55, 0.5);
+    // --hovergreen-color: rgba(64, 112, 205, 0.5);
+    // --welcomepagetext-color: #FAFAFA;
+    // --mainbackground-color: #F3F3F3;
+    // --buttoncancel-color: #434D67;
+    
     --transition: 300ms ease-in; 
 
     --container-padding: 20px;
@@ -133,13 +132,7 @@ Error generating stack: `+o.message+`
     line-height: 1.2;
   }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, p {
   margin: 0;
   padding: 0;
 }
@@ -188,4 +181,4 @@ screen and (min-resolution : 1dppx) and (max-width: 767.8px){
     font-size: 16px;
     line-height: 1;
   }
-`,Hv=()=>Ve.jsx(Vv,{children:Ve.jsx(Wv,{children:"Page not found! Please chech the path and try again."})}),Qv=N.lazy(()=>Iv(()=>import("./HomePage-0a710e4c.js").then(e=>e.H),[]));function Kv(){return Ve.jsxs(Nm,{children:[Ve.jsx(ji,{path:"/",element:Ve.jsx(Qv,{})}),Ve.jsx(ji,{path:"*",element:Ve.jsx(Hv,{})})]})}Ai.createRoot(document.getElementById("root")).render(Ve.jsx(Us.StrictMode,{children:Ve.jsxs(Rm,{basename:"/steering-wheels",children:[Ve.jsx(zv,{styles:Ov}),Ve.jsx(Kv,{})]})}));export{Us as R,Vi as _,Wh as a,Ve as b,vd as c,Iv as d,Yv as e,zs as g,Fv as i,Xv as j,Zv as k,Gv as m,Ol as n,N as r};
+`,Hv=()=>Ve.jsx(Vv,{children:Ve.jsx(Wv,{children:"Page not found! Please chech the path and try again."})}),Qv=N.lazy(()=>Iv(()=>import("./HomePage-9fc7d6a7.js").then(e=>e.H),[]));function Kv(){return Ve.jsxs(Nm,{children:[Ve.jsx(ji,{path:"/",element:Ve.jsx(Qv,{})}),Ve.jsx(ji,{path:"*",element:Ve.jsx(Hv,{})})]})}Ai.createRoot(document.getElementById("root")).render(Ve.jsx(Us.StrictMode,{children:Ve.jsxs(Rm,{basename:"/steering-wheels",children:[Ve.jsx(zv,{styles:Ov}),Ve.jsx(Kv,{})]})}));export{Us as R,Vi as _,Wh as a,Ve as b,vd as c,Iv as d,Yv as e,zs as g,Fv as i,Xv as j,Zv as k,Gv as m,Ol as n,N as r};
