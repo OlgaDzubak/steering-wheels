@@ -1,4 +1,4 @@
-import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as D,j as b,b as Mn}from"./index-18dd2f54.js";var $t={exports:{}},P={};/** @license React v16.13.1
+import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as D,j as b,b as Mn}from"./index-5ba2aa21.js";var $t={exports:{}},P={};/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -286,7 +286,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     width: 22px;
     fill: var(--text-color);
     
-`,eo=({language:n,onLanguageChange:e})=>{const i=(r,t)=>{e(r.value)};return b.jsx(ka,{children:b.jsxs(Ha,{children:[b.jsxs(Na,{children:[b.jsx(Wa,{children:Z.title[n]}),b.jsx(Ga,{children:Z.subTitle[n]})]}),b.jsxs(Ua,{children:[b.jsxs(Ya,{children:[b.jsxs("address",{children:[b.jsx(Ka,{children:Z.address[n]}),b.jsxs(qa,{children:[b.jsx(Rt,{children:b.jsx(Tt,{href:"tel:+38(097)678-13-96",children:"+38 (097) 678-13-96"})}),b.jsx(Rt,{children:b.jsx(Tt,{href:"tel:+38(050)531-92-76",children:"+38 (050) 531-92-76"})})]})]}),b.jsxs(Xa,{children:[b.jsx(ke,{children:b.jsx(He,{href:"https://www.instagram.com/nataha9754",target:"_blank",rel:"noopener noreferrer",children:b.jsx(Za,{})})}),b.jsx(ke,{children:b.jsx(He,{href:"viber://chat?number=%2B380976781396",target:"_blank",rel:"noopener noreferrer",children:b.jsx(Ja,{})})}),b.jsx(ke,{children:b.jsx(He,{href:"https://t.me/NatashaLatash",target:"_blank",rel:"noopener noreferrer",children:b.jsx(Qa,{})})})]})]}),b.jsx("label",{for:"languages",hidden:!0,children:"Language"}),b.jsx(_a,{name:"languages",inputId:"language-select",isSearchable:!1,placeholder:n,options:[{value:"ua",label:"ua"},{value:"ru",label:"ru"}],onChange:i,styles:za()})]})]})})},to=D.div`
+`,eo=({language:n,onLanguageChange:e})=>{const i=(r,t)=>{e(r.value)};return b.jsx(ka,{children:b.jsxs(Ha,{children:[b.jsxs(Na,{children:[b.jsx(Wa,{children:Z.title[n]}),b.jsx(Ga,{children:Z.subTitle[n]})]}),b.jsxs(Ua,{children:[b.jsxs(Ya,{children:[b.jsxs("address",{children:[b.jsx(Ka,{children:Z.address[n]}),b.jsxs(qa,{children:[b.jsx(Rt,{children:b.jsx(Tt,{href:"tel:+38(097)678-13-96",children:"+38 (097) 678-13-96"})}),b.jsx(Rt,{children:b.jsx(Tt,{href:"tel:+38(050)531-92-76",children:"+38 (050) 531-92-76"})})]})]}),b.jsxs(Xa,{children:[b.jsx(ke,{children:b.jsx(He,{href:"https://www.instagram.com/nataha9754",target:"_blank",rel:"noopener noreferrer",children:b.jsx(Za,{})})}),b.jsx(ke,{children:b.jsx(He,{href:"viber://chat?number=%2B380976781396",target:"_blank",rel:"noopener noreferrer",children:b.jsx(Ja,{})})}),b.jsx(ke,{children:b.jsx(He,{href:"https://t.me/NatashaLatash",target:"_blank",rel:"noopener noreferrer",children:b.jsx(Qa,{})})})]})]}),b.jsx("label",{for:"language",hidden:!0,children:"Language"}),b.jsx(_a,{name:"languages",inputId:"language",isSearchable:!1,placeholder:n,options:[{value:"ua",label:"ua"},{value:"ru",label:"ru"}],onChange:i,styles:za()})]})]})})},to=D.div`
   padding-left  : var(--container-padding);
   padding-right : var(--container-padding);
   padding-top   : 30px;
@@ -301,7 +301,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-`,io=p.lazy(()=>Mn(()=>import("./Gallery-a16ffab6.js"),["assets/Gallery-a16ffab6.js","assets/index-18dd2f54.js"])),ro=({language:n})=>b.jsx("main",{children:b.jsx("section",{children:b.jsxs(to,{children:[b.jsx(no,{children:Z.galleryTitle[n]}),b.jsx(io,{language:n})]})})}),ao=D.footer`
+`,io=p.lazy(()=>Mn(()=>import("./Gallery-02d4b09e.js"),["assets/Gallery-02d4b09e.js","assets/index-5ba2aa21.js"])),ro=({language:n})=>b.jsx("main",{children:b.jsx("section",{children:b.jsxs(to,{children:[b.jsx(no,{children:Z.galleryTitle[n]}),b.jsx(io,{language:n})]})})}),ao=D.footer`
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0px -2px 0px 0px  var(--shadow-color);
