@@ -9,7 +9,6 @@ import {
 export const Paginator = ({ handlePageClick, pageCount, isLoading }) => {
 
 
-
   return  <>
             {
               !!(pageCount - 1) &&  <StyledReactPaginate
@@ -20,7 +19,8 @@ export const Paginator = ({ handlePageClick, pageCount, isLoading }) => {
                                       pageRangeDisplayed={2}
                                       previousLabel={ <MdOutlineArrowBackIos fill="rgba(243, 243, 243, 0.30)" size={15} /> }
                                       renderOnZeroPageCount={ null }
-                                      onPageActive={ (isLoading) && window.scrollTo({ top: 0, behavior: 'smooth', }) }
+                                      onPageActive={(isLoading) && window.scrollTo({ top: 0, behavior: 'smooth', })}
+                                      hrefAllControls
                                       aria-role=""
                                     />
             }
