@@ -14,7 +14,7 @@ const HomePage = () => {
     if (!(language === 'ua' || language === 'ru')) {
      setLanguage('ua');
     }
-    document.querySelector("html").setAttribute("lang", language);
+    document.querySelector("html").setAttribute("lang", contentData.metaLang[language]);
     document.querySelector('meta[name="description"]').setAttribute("content", contentData.metaDescription[language]);
     document.querySelector("title").textContent = contentData.pageTitle[language];
     
