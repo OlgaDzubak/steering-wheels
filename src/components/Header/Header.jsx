@@ -2,6 +2,8 @@ import Select from 'react-select';
 import contentData from '../../helpers/language';
 import {    Header_, 
             Container, 
+            LanguageSelectDiv,
+            SelectLabel,
             SelectStyles,
             Header_TitleContainer, 
             Header_RightContainer,
@@ -72,17 +74,18 @@ const Header = ({language, onLanguageChange}) => {
 
                         </Header_ContactsContainer>
                         
-                        <label for="language" hidden>Language</label>
-                        <Select
-                            name = "languages"
-                            inputId = "language"
-                            isSearchable = {false}
-                            placeholder = {language}
-                            options={[{"value": "ua" , "label": "ua"}, {"value": "ru" , "label":"ru"}]} 
-                            onChange={handleLanguageChange}
-                            styles={SelectStyles()} 
-                        />
-
+                        <LanguageSelectDiv>
+                            <SelectLabel htmlFor="language-input">Language</SelectLabel>
+                            <Select
+                                inputId = "language-input"
+                                name = "languages"                                
+                                isSearchable = {false}
+                                placeholder = {language}
+                                options={[{"value": "ua" , "label": "ua"}, {"value": "ru" , "label":"ru"}]} 
+                                onChange={handleLanguageChange}
+                                styles={SelectStyles()} 
+                            />
+                        </LanguageSelectDiv>
                     </Header_RightContainer>
 
                 </Container>

@@ -47,30 +47,48 @@ export const TitleAndContacts = styled.div`
 
 `;
 
+export const LanguageSelectDiv = styled.div`
+`;
+
+export const SelectLabel = styled.label`
+`;
+
 export const SelectStyles = () => {
-return {
-    container: (baseStyles)  =>({
-       ...baseStyles,
-    }),
-    control: (baseStyles) => ({
-      display: 'flex',
-      padding: '0px 0px 0px 0px',
-      fontWeight: '400',
-      fontSize: '12px',
-      color: `var(--text-color)`,
-      backgroundColor: 'transparent',
-    }),
-    option: () => ({
-        padding: '5px 10px 5px 10px',
-        fontSize: '12px',
-        backgroundColor: 'transparent',
-        color: `var(--text-color)`,
-        cursor: 'default',
-        transition: `color var(--transition)`,
-        ':hover' : { backgroundColor: `var(--back-color)` },
-        ':active': { backgroundColor: `var(--back-color)` },
+    return {
+        container: (baseStyles)  =>({
+        ...baseStyles,
+        width: '70px',
         }),
-        };
+        control: (baseStyles) => ({
+        display: 'flex',
+        padding: '0px 0px 0px 0px',
+        fontWeight: '400',
+        fontSize: '12px',
+        color: `var(--text-color)`,
+        backgroundColor: 'transparent',
+        }),
+        option: () => ({
+            padding: '5px 10px 5px 10px',
+            fontSize: '12px',
+            backgroundColor: 'transparent',
+            color: `var(--text-color)`,
+            cursor: 'default',
+            transition: `color var(--transition)`,
+            ':hover' : { backgroundColor: `var(--back-color)` },
+            ':active': { backgroundColor: `var(--back-color)` },
+        }),
+        input: (provided) => ({
+            ...provided,
+            width: '100%',
+            padding: 10,
+            margin: 0,
+            border: 'none',
+        }),
+        clearIndicator: (baseStyles)=>({
+            ...baseStyles,
+            display: 'none',          
+        }),
+    };
 };
 
 
