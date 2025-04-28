@@ -1,4 +1,4 @@
-import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as D,j as b,b as Mn}from"./index-6d76f329.js";var $t={exports:{}},P={};/** @license React v16.13.1
+import{g as yn,s as Fn,h as On,r as p,E as Dn,c as In,_ as C,a as An,n as D,j as b,b as Mn}from"./index-eeb48412.js";var $t={exports:{}},P={};/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -303,7 +303,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-`,ao=p.lazy(()=>Mn(()=>import("./Gallery-f6d00f54.js"),["assets/Gallery-f6d00f54.js","assets/index-6d76f329.js"])),oo=({language:n})=>b.jsx("main",{children:b.jsx("section",{children:b.jsxs(io,{children:[b.jsx(ro,{children:Y.galleryTitle[n]}),b.jsx(ao,{language:n})]})})}),uo=D.footer`
+`,ao=p.lazy(()=>Mn(()=>import("./Gallery-cdd67d83.js"),["assets/Gallery-cdd67d83.js","assets/index-eeb48412.js"])),oo=({language:n})=>b.jsx("main",{children:b.jsx("section",{children:b.jsxs(io,{children:[b.jsx(ro,{children:Y.galleryTitle[n]}),b.jsx(ao,{language:n})]})})}),uo=D.footer`
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0px -2px 0px 0px  var(--shadow-color);
