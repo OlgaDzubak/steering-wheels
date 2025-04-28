@@ -72,10 +72,10 @@ const Header = ({language, onLanguageChange}) => {
 
                         </Header_ContactsContainer>
                         
-                        <label for="languages" hidden>Language</label>
+                        <label for="language" hidden>Language</label>
                         <Select
                             name = "languages"
-                            inputId = "language-select"
+                            inputId = "language"
                             isSearchable = {false}
                             placeholder = {language}
                             options={[{"value": "ua" , "label": "ua"}, {"value": "ru" , "label":"ru"}]} 
