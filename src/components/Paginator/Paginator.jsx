@@ -1,8 +1,9 @@
 import { StyledReactPaginate } from './Paginator.styled';
 import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
+import scrollToTop from '../../helpers/scrollToTop';
+
 
 export const Paginator = ({ handlePageClick, pageCount, isLoading }) => {
-
 
   return  <>
             {
@@ -14,7 +15,7 @@ export const Paginator = ({ handlePageClick, pageCount, isLoading }) => {
                                       pageRangeDisplayed={2}
                                       previousLabel={ <MdOutlineArrowBackIos fill="rgba(243, 243, 243, 0.30)" size={15} /> }
                                       renderOnZeroPageCount={ null }
-                                      onPageActive={(isLoading) && window.scrollTo({ top: 0, behavior: 'smooth', })}
+                                      onPageActive={(isLoading) && scrollToTop()}
                                       hrefBuilder={() =>'#'}
                                       hrefAllControls
                                     />

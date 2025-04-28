@@ -28,10 +28,8 @@ export const Container = styled.div`
 `;
 
 export const TitleAndContacts = styled.div`
-
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
     width: 100%;
