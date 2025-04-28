@@ -71,14 +71,16 @@ const Header = ({language, onLanguageChange}) => {
                             </SocialLinks_ul>
 
                         </Header_ContactsContainer>
-
+                        
+                        <label for="languages" hidden>Language</label>
                         <Select
-                                    isSearchable = {false}
-                                    placeholder = {language}
-                                    options={[{"value": "ua" , "label": "ua"}, {"value": "ru" , "label":"ru"}]} 
-                                    onChange={handleLanguageChange}
-                                    styles={SelectStyles()} 
-                                    name = {"languages"}
+                            name = "languages"
+                            inputId = "language-select"
+                            isSearchable = {false}
+                            placeholder = {language}
+                            options={[{"value": "ua" , "label": "ua"}, {"value": "ru" , "label":"ru"}]} 
+                            onChange={handleLanguageChange}
+                            styles={SelectStyles()} 
                         />
 
                     </Header_RightContainer>
