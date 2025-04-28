@@ -4,7 +4,6 @@ import { ReactComponent as ViberIMG     } from '../../assets/images/link_icons/v
 import { ReactComponent as TelegramIMG  } from '../../assets/images/link_icons/telegram.svg';
 
 
-
 export const Header_ = styled.header`
     padding-top: 30px;
     box-shadow: 0px 2px 0px 0px var(--shadow-color);

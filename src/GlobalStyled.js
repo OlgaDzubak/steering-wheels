@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { css } from '@emotion/react';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = css`
 *,
 *::before,
 *::after {
@@ -90,4 +90,4 @@ button {
 }
 `;
 
-export default GlobalStyle;
+export default GlobalStyles;

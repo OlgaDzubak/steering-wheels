@@ -1,10 +1,5 @@
 import { StyledReactPaginate } from './Paginator.styled';
-import {
-  MdArrowBackIos,
-  MdArrowForwardIos,
-  MdOutlineArrowBackIos,
-  MdOutlineArrowForwardIos,
-} from 'react-icons/md';
+import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
 
 export const Paginator = ({ handlePageClick, pageCount, isLoading }) => {
 
@@ -22,7 +17,6 @@ export const Paginator = ({ handlePageClick, pageCount, isLoading }) => {
                                       onPageActive={(isLoading) && window.scrollTo({ top: 0, behavior: 'smooth', })}
                                       hrefBuilder={() =>'#'}
                                       hrefAllControls
-                                      aria-role=""
                                     />
             }
           </>
