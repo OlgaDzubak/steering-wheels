@@ -20,6 +20,7 @@ export const Paginator = ({ handlePageClick, pageCount, isLoading }) => {
                                       previousLabel={ <MdOutlineArrowBackIos fill="rgba(243, 243, 243, 0.30)" size={15} /> }
                                       renderOnZeroPageCount={ null }
                                       onPageActive={(isLoading) && window.scrollTo({ top: 0, behavior: 'smooth', })}
+                                      hrefBuilder={() =>'#'}
                                       hrefAllControls
                                       aria-role=""
                                     />
