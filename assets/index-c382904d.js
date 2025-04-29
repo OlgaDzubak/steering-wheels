@@ -108,19 +108,9 @@ Error generating stack: `+o.message+`
     --back-color: rgba(30, 30, 30, 0.1);
     --shadow-color: rgba(200, 200, 200, 0.7);
     --whitetwenty-color: rgba(243, 243, 243, 0.2);
-
     --whitefifty-color: rgba(243, 243, 243, 0.5);
-    --whitefourty-color: rgba(243, 243, 243, 0.4);
-    
-    // --blue-color: #161F37;
-    // --bluefifty-color: rgba(22, 31, 55, 0.5);
-    // --hovergreen-color: rgba(64, 112, 205, 0.5);
-    // --welcomepagetext-color: #FAFAFA;
-    // --mainbackground-color: #F3F3F3;
-    // --buttoncancel-color: #434D67;
-    
+    //--whitefourty-color: rgba(243, 243, 243, 0.4);
     --transition: 300ms ease-in; 
-
     --container-padding: 20px;
   }
 
@@ -182,4 +172,4 @@ screen and (min-resolution : 1dppx) and (max-width: 767.8px){
     font-size: 16px;
     line-height: 1;
   }
-`,Hv=()=>Ve.jsx(Vv,{children:Ve.jsx(Wv,{children:"Page not found! Please chech the path and try again."})}),Qv=N.lazy(()=>Iv(()=>import("./HomePage-d850d3ed.js").then(e=>e.H),[]));function Kv(){return Ve.jsxs(Nm,{children:[Ve.jsx(ji,{path:"/",element:Ve.jsx(Qv,{})}),Ve.jsx(ji,{path:"*",element:Ve.jsx(Hv,{})})]})}Ai.createRoot(document.getElementById("root")).render(Ve.jsx(Us.StrictMode,{children:Ve.jsxs(Rm,{basename:"/steering-wheels",children:[Ve.jsx(zv,{styles:Ov}),Ve.jsx(Kv,{})]})}));export{Us as R,Vi as _,Wh as a,Ve as b,vd as c,Iv as d,Yv as e,zs as g,Fv as i,Xv as j,Zv as k,Gv as m,Ol as n,N as r};
+`,Hv=()=>Ve.jsx(Vv,{children:Ve.jsx(Wv,{children:"Page not found! Please chech the path and try again."})}),Qv=N.lazy(()=>Iv(()=>import("./HomePage-87f690e3.js").then(e=>e.H),[]));function Kv(){return Ve.jsxs(Nm,{children:[Ve.jsx(ji,{path:"/",element:Ve.jsx(Qv,{})}),Ve.jsx(ji,{path:"*",element:Ve.jsx(Hv,{})})]})}Ai.createRoot(document.getElementById("root")).render(Ve.jsx(Us.StrictMode,{children:Ve.jsxs(Rm,{basename:"/steering-wheels",children:[Ve.jsx(zv,{styles:Ov}),Ve.jsx(Kv,{})]})}));export{Us as R,Vi as _,Wh as a,Ve as b,vd as c,Iv as d,Yv as e,zs as g,Fv as i,Xv as j,Zv as k,Gv as m,Ol as n,N as r};
