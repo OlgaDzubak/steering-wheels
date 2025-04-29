@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, lazy } from 'react';
 import useLocalStorage from '../hooks/useLocalStorage';
 import contentData from '../helpers/language';
 import Header from '../components/Header/Header';
