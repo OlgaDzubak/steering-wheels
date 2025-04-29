@@ -37,19 +37,9 @@ const GlobalStyles = css`
     --back-color: rgba(30, 30, 30, 0.1);
     --shadow-color: rgba(200, 200, 200, 0.7);
     --whitetwenty-color: rgba(243, 243, 243, 0.2);
-
     --whitefifty-color: rgba(243, 243, 243, 0.5);
-    --whitefourty-color: rgba(243, 243, 243, 0.4);
-    
-    // --blue-color: #161F37;
-    // --bluefifty-color: rgba(22, 31, 55, 0.5);
-    // --hovergreen-color: rgba(64, 112, 205, 0.5);
-    // --welcomepagetext-color: #FAFAFA;
-    // --mainbackground-color: #F3F3F3;
-    // --buttoncancel-color: #434D67;
-    
+    //--whitefourty-color: rgba(243, 243, 243, 0.4);
     --transition: 300ms ease-in; 
-
     --container-padding: 20px;
   }
 
