@@ -147,6 +147,7 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 button {
   cursor: pointer;
@@ -181,4 +182,4 @@ screen and (min-resolution : 1dppx) and (max-width: 767.8px){
     font-size: 16px;
     line-height: 1;
   }
-`,Hv=()=>Ve.jsx(Vv,{children:Ve.jsx(Wv,{children:"Page not found! Please chech the path and try again."})}),Qv=N.lazy(()=>Iv(()=>import("./HomePage-9fc7d6a7.js").then(e=>e.H),[]));function Kv(){return Ve.jsxs(Nm,{children:[Ve.jsx(ji,{path:"/",element:Ve.jsx(Qv,{})}),Ve.jsx(ji,{path:"*",element:Ve.jsx(Hv,{})})]})}Ai.createRoot(document.getElementById("root")).render(Ve.jsx(Us.StrictMode,{children:Ve.jsxs(Rm,{basename:"/steering-wheels",children:[Ve.jsx(zv,{styles:Ov}),Ve.jsx(Kv,{})]})}));export{Us as R,Vi as _,Wh as a,Ve as b,vd as c,Iv as d,Yv as e,zs as g,Fv as i,Xv as j,Zv as k,Gv as m,Ol as n,N as r};
+`,Hv=()=>Ve.jsx(Vv,{children:Ve.jsx(Wv,{children:"Page not found! Please chech the path and try again."})}),Qv=N.lazy(()=>Iv(()=>import("./HomePage-d850d3ed.js").then(e=>e.H),[]));function Kv(){return Ve.jsxs(Nm,{children:[Ve.jsx(ji,{path:"/",element:Ve.jsx(Qv,{})}),Ve.jsx(ji,{path:"*",element:Ve.jsx(Hv,{})})]})}Ai.createRoot(document.getElementById("root")).render(Ve.jsx(Us.StrictMode,{children:Ve.jsxs(Rm,{basename:"/steering-wheels",children:[Ve.jsx(zv,{styles:Ov}),Ve.jsx(Kv,{})]})}));export{Us as R,Vi as _,Wh as a,Ve as b,vd as c,Iv as d,Yv as e,zs as g,Fv as i,Xv as j,Zv as k,Gv as m,Ol as n,N as r};
