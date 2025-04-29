@@ -76,6 +76,7 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 button {
   cursor: pointer;
