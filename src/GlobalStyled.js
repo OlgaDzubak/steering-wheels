@@ -7,7 +7,7 @@ const GlobalStyles = css`
   box-sizing: border-box;
 }
 
-@font-face {
+  @font-face {
     src: url('../src/assets/fonts/Manrope-Regular.ttf') format('ttf');
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
@@ -31,14 +31,12 @@ const GlobalStyles = css`
     font-style: normal;
   }
 
-    :root {
-    
+  :root {    
     --text-color: rgba(30, 30, 30);
     --back-color: rgba(30, 30, 30, 0.1);
     --shadow-color: rgba(200, 200, 200, 0.7);
     --whitetwenty-color: rgba(243, 243, 243, 0.2);
     --whitefifty-color: rgba(243, 243, 243, 0.5);
-    //--whitefourty-color: rgba(243, 243, 243, 0.4);
     --transition: 300ms ease-in; 
     --container-padding: 20px;
   }
@@ -51,27 +49,26 @@ const GlobalStyles = css`
     line-height: 1.2;
   }
 
-h1, h2, p {
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-}
-button {
-  cursor: pointer;
-  font-family: inherit;
-}
+  h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+    
+  img {
+    display: block;
+    max-width: 100%;
+  }
 `;
 
 export default GlobalStyles;
