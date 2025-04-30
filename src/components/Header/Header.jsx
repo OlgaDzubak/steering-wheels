@@ -44,10 +44,19 @@ const Header = ({language, onLanguageChange}) => {
                             
                             <address>
                                 <Header_P>{contentData.address[language]}</Header_P>
-                                < Header_Contacts_ul>
-                                    <Header_Contacts_li><Header_A href="tel:+38(097)678-13-96" aria-label="Telephone us at 38-097-678-13-96">+38 (097) 678-13-96</Header_A></Header_Contacts_li>
-                                    <Header_Contacts_li><Header_A href="tel:+38(050)531-92-76" aria-label="Telephone us at 38-050-531-92-76">+38 (050) 531-92-76</Header_A></Header_Contacts_li>
+        
+                                <Header_Contacts_ul>
+                            
+                                    <Header_Contacts_li>
+                                        <Header_A href="tel:+38(097)678-13-96" aria-label="Telephone us at 38-097-678-13-96">+38 (097) 678-13-96</Header_A>
+                                    </Header_Contacts_li>
+                                
+                                    <Header_Contacts_li>
+                                            <Header_A href="tel:+38(050)531-92-76" aria-label="Telephone us at 38-050-531-92-76">+38 (050) 531-92-76</Header_A>
+                                    </Header_Contacts_li>
+                            
                                 </Header_Contacts_ul>
+                        
                             </address>
 
                             < SocialLinks_ul>
