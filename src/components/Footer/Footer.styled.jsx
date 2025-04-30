@@ -18,9 +18,7 @@ export const Container = styled.div`
   align-items: flex-start;
   gap: 40px;
 
-  @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-  screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-  screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+  @media screen and (max-width: 767.8px){
     flex-direction: column;
     row-gap: 15px;
     align-items: center;
@@ -32,21 +30,18 @@ export const Container = styled.div`
 //---- Title ----------------------------------------------------
 
 export const Footer_TitleContainer = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     align-items: center;
  
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1399.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 768px) and (max-width: 1399.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 768px) and (max-width: 1399.8px){
+    @media screen and (min-width: 768px) and (max-width: 1399.8px){
         width: 650px;
         align-items: flex-start;
     }  
     
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px),
-    screen and (min-resolution : 96dpi) and (min-width:1400px),
-    screen and (min-resolution : 1dppx) and (min-width: 1400px){
+    @media screen and (min-width: 1400px){
         width: 800px;
         align-items: flex-start;
     } 
@@ -57,27 +52,19 @@ export const Footer_Title = styled.h3`
     margin-bottom: 15px;
     text-align: center;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 419.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 419.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 419.8px){
+    @media screen and (max-width: 419.8px){
         font-size: 15px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 420px) and (max-width: 908.8px),
-    screen and (min-resolution : 96dpi) and  (min-width: 420px) and (max-width: 908.8px),
-    screen and (min-resolution : 1dppx) and  (min-width: 420px) and (max-width: 908.8px){
+    @media screen and (min-device-pixel-ratio: 1) and (min-width: 420px) and (max-width: 908.8px){
         font-size: 18px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 9098px) and (max-width: 1399.8px){
+    @media screen and (min-device-pixel-ratio: 1) and (min-width: 909px) and (max-width: 1399.8px){
         font-size: 24px;
     }  
     
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px),
-    screen and (min-resolution : 96dpi) and (min-width:1400px),
-    screen and (min-resolution : 1dppx) and (min-width: 1400px){
+    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px){
         font-size: 32px;
     }     
 `;
@@ -127,15 +114,11 @@ export const Footer_ContactsContainer = styled.div`
     gap: 15px;
     align-items: center;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+    @media screen and (max-width: 767.8px){
         align-items: center;
     }
       
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1399.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 768px) and (max-width: 1399.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 768px) and (max-width: 1399.8px){
+    @media screen and (min-width: 768px) and (max-width: 1399.8px){
         row-gap: 15px;
     }
 `;
@@ -145,16 +128,12 @@ export const Footer_Contacts_ul = styled.ul`
     flex-direction: column;
     gap: 5px;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 359.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 359.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 359.8px){
+    @media screen and (max-width: 359.8px){
       align-items: center;
       justify-content: center;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 360px) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 360px) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 360px) and (max-width: 767.8px){
+    @media screen and (min-width: 360px) and (max-width: 767.8px){
         flex-direction: row;
         column-gap: 15px;
         align-items: center;
@@ -168,19 +147,13 @@ export const Footer_P = styled.p`
     margin-bottom: 5px;
     text-align: center;
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 419.8px) and (max-width: 908.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 419.8px) and(max-width: 908.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 419.8px) and (max-width: 908.8px){
+    @media screen and (min-width: 419.8px) and (max-width: 908.8px){
         font-size: 13px;
     }
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
-    screen and (min-resolution : 96dpi) and (min-width: 768px),
-    screen and (min-resolution : 1dppx) and (min-width: 768px){
+    @media screen and (min-width: 768px){
         text-align: left;
     }  
-    @media screen and (min-device-pixel-ratio: 1) and (min-width:909px),
-    screen and (min-resolution : 96dpi) and (min-width: 909px),
-    screen and (min-resolution : 1dppx) and (min-width: 909px){
+    @media screen and (min-width:909px){
         font-size: 15px;
     }  
 `;
@@ -194,9 +167,7 @@ export const Footer_A = styled.a`
         color: darkred;
     };
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px),
-    screen and (min-resolution : 96dpi) and (min-width:1400px),
-    screen and (min-resolution : 1dppx) and (min-width: 1400px){
+    @media screen and (min-width: 1400px){
         font-size: 13px;
     } 
 `;
@@ -211,9 +182,7 @@ export const SocialLinks_ul = styled.ul`
     gap: 10px;
     justify-content: flex-start;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+    @media screen and (max-width: 767.8px){
         justify-content: center;
     }
 
@@ -231,8 +200,8 @@ export const SocialLinks_A = styled.a`
     transition: var(--transition);
     border: 1px solid var(--text-color);
     border-radius: 25%;
-    &:hover,
-    &:focus {
+
+    &:hover, &:focus {
         transform: scale(1.1);
     }
 `;

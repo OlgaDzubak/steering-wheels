@@ -5,7 +5,6 @@ export const StyledReactPaginate = styled(ReactPaginate)`
   display: flex;
   max-width: 295px;
   margin: 0px auto 40px  auto;
-  
   justify-content: space-between;
   align-items: center;
   

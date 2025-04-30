@@ -6,8 +6,7 @@ export const Item_li = styled.li`
       transition: transform var(--transition);
       width: 400px;
 
-      &:hover,
-      &:focus {
+      &:hover, &:focus {
             transform: scale(1.03);
             cursor: zoom-in;  
       };

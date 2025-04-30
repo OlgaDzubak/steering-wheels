@@ -18,9 +18,7 @@ export const Container = styled.div`
     align-items: flex-start;
     gap: 40px;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+    @media screen and (max-width: 767.8px){
         flex-direction: column;
         row-gap: 15px;
         align-items: center;
@@ -34,9 +32,7 @@ export const TitleAndContacts = styled.div`
     gap: 20px;
     width: 100%;
 
-   @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+   @media screen and (max-width: 767.8px){
     flex-direction: column;
     row-gap: 15px;
     align-items: center;
@@ -82,19 +78,14 @@ export const SelectStyles = () => {
 export const Header_TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
-    //margin-bottom: 10px;
     align-items : center;
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1399.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 768px) and (max-width: 1399.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 768px) and (max-width: 1399.8px){
+    @media screen and (min-width: 768px) and (max-width: 1399.8px){
         width: 650px;
         align-items: flex-start;
     }  
     
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px),
-    screen and (min-resolution : 96dpi) and (min-width:1400px),
-    screen and (min-resolution : 1dppx) and (min-width: 1400px){
+    @media screen and (min-width: 1400px){
         width: 800px;
         align-items: flex-start;
     } 
@@ -106,9 +97,7 @@ export const Header_RightContainer =styled.div`
     align-items: flex-end;
     row-gap: 25px;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+    @media screen and (max-width: 767.8px){
         align-items: center;
     }
 `;
@@ -117,87 +106,63 @@ export const Header_Title = styled.h1`
     margin-top:-10px;
     margin-bottom: 15px;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 299.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 299.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 299.8px){
+    @media screen and (max-width: 299.8px){
         font-size: 22px;
         text-align: center;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 300px) and (max-width: 419.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 300px) and (max-width: 419.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 300px) and  (max-width: 419.8px){
+    @media screen and (min-width: 300px) and (max-width: 419.8px){
         font-size: 32px;
         text-align: center;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 420px) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 420px) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and(min-width: 420px) and (max-width: 767.8px){
+    @media screen and (min-width: 420px) and (max-width: 767.8px){
         font-size: 38px;
         text-align: center;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 908.8px),
-    screen and (min-resolution : 96dpi) and  (min-width: 420px) and (max-width: 908.8px),
-    screen and (min-resolution : 1dppx) and  (min-width: 420px) and (max-width: 908.8px){
+    @media screen and (min-width: 768px) and (max-width: 908.8px){
         font-size: 40px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 9098px) and (max-width: 1399.8px){
+    @media screen and (min-width: 909px) and (max-width: 1399.8px){
         font-size: 44px;
     }  
     
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px),
-    screen and (min-resolution : 96dpi) and (min-width:1400px),
-    screen and (min-resolution : 1dppx) and (min-width: 1400px){
+    @media screen and and (min-width: 1400px){
         font-size: 52px;
     }     
 `;
 export const Header_SubTitle = styled.h2`
     
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 299.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 299.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 299.8px){
+    @media screen and (max-width: 299.8px){
         font-size: 12px;
         text-align: center;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 300px) and (max-width: 419.8px),
-    screen and (min-resolution : 96dpi)and (min-width: 300px) and (max-width: 419.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 300px) and (max-width: 419.8px){
+    @media screen and (min-width: 300px) and (max-width: 419.8px){
         font-size: 15px;
         margin-bottom: 15px;
         text-align: center;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 420px) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 420px) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and(min-width: 420px) and (max-width: 767.8px){
+    @media screen and (min-width: 420px) and (max-width: 767.8px){
         font-size: 16px;
         text-align: center;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 908.8px),
-    screen and (min-resolution : 96dpi) and  (min-width: 768px) and (max-width: 908.8px),
-    screen and (min-resolution : 1dppx) and  (min-width:  768px) and (max-width: 908.8px){
+    @media screen and (min-width: 768px) and (max-width: 908.8px){
         font-size: 16px;
     }
 
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 909px) and (max-width: 1399.8px){
+    @media screen and (min-width: 909px) and (max-width: 1399.8px){
         font-size: 16px;
 
     }  
     
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px),
-    screen and (min-resolution : 96dpi) and (min-width: 1400px),
-    screen and (min-resolution : 1dppx) and (min-width: 1400px){
+    @media screen and (min-width: 1400px){
         font-size: 20px;
     }  
 `;
@@ -211,16 +176,12 @@ export const Header_ContactsContainer = styled.div`
     align-items: center;
     row-gap: 25px;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+    @media screen and (max-width: 767.8px){
         align-items: center;
         width: 100%;
     }
       
-      @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
-      screen and (min-resolution : 96dpi) and (min-width: 768px),
-      screen and (min-resolution : 1dppx) and (min-width: 768px){
+      @media screen and (min-width: 768px){
           row-gap: 15px;
           align-items: flex-start;
       }
@@ -232,15 +193,11 @@ export const Header_Contacts_ul = styled.ul`
     flex-direction: column;
     gap: 7px;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 419.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 419.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 419.8px){
+    @media screen and (max-width: 419.8px){
       align-items: center;
       justify-content: center;
     }
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 420px) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 420px) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 420px) and (max-width: 767.8px){
+    @media screen and (min-width: 420px) and (max-width: 767.8px){
         flex-direction: row;
         column-gap: 15px;
         align-items: center;
@@ -255,9 +212,7 @@ export const Header_P = styled.p`
     margin-bottom: 11px;
     text-align: center;
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 767.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 767.8px){
+    @media screen and (min-width: 767.8px){
         text-align: left;
     }
 
@@ -274,22 +229,16 @@ export const Header_A = styled.a`
         color: darkred;
     };
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 419.8px) and (max-width: 908.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 419.8px) and(max-width: 908.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 419.8px) and (max-width: 908.8px){
+    @media screen and (min-width: 419.8px) and (max-width: 908.8px){
         font-size: 16px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width:909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 909px) and (max-width: 1399.8px){
+    @media screen and (min-width:909px) and (max-width: 1399.8px){
         font-size: 17px;
         
     }  
     
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px),
-    screen and (min-resolution : 96dpi) and (min-width:1400px),
-    screen and (min-resolution : 1dppx) and (min-width: 1400px){
+    @media screen and (min-width: 1400px){
         font-size: 18px;
     } 
 `;
@@ -303,9 +252,7 @@ export const SocialLinks_ul = styled.ul`
     gap: 10px;
     justify-content: flex-start;
     
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+    @media screen and (max-width: 767.8px){
         justify-content: center;
     }
 `;
@@ -322,8 +269,7 @@ export const SocialLinks_A = styled.a`
     transition: transform var(--transition);
     border: 1px solid var(--text-color);
     border-radius: 25%;
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
         transform: scale(1.1);  
     };
 `;
