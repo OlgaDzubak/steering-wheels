@@ -66,7 +66,7 @@ const Gallery = ({language}) => {
                               <Gallery_ul>  { photos.map((item, idx) => { 
                                   return <GalleryItem 
                                                   _id={item._id} 
-                                                  url={item.photo_url} 
+                                                  url={item.photo_url_small} 
                                                   alt={item[contentData.descriptionField[language]]} 
                                                   key={item._id}
                                                   onGalleryItemClick = {()=>{openLightboxOnSlide(idx+1)}}
@@ -80,8 +80,6 @@ const Gallery = ({language}) => {
                                                                                       alt={item[contentData.descriptionField[language]]} 
                                                                                   />
                                                                         })}
-
-
                               />
 
                               <Paginator pageCount={Math.ceil(total/perPage)} 
