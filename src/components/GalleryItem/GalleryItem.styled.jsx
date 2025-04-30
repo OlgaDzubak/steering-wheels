@@ -11,6 +11,10 @@ export const Item_li = styled.li`
             transform: scale(1.03);
             cursor: zoom-in;  
       };
+
+      @media screen and (max-width: 439.98px){
+            width: 100%;
+      }
 `;
 
 export const Item_img = styled.img`
@@ -20,4 +24,11 @@ export const Item_img = styled.img`
 export const Item_P = styled.p`
       padding: 15px;
       font-size: 15px;
+      
+      @media screen and (max-width: 439.98px){
+            font-size: 12px;
+      }
+      @media screen and (max-width: 199.98px){
+            font-size: 10px;
+      }
 `;
