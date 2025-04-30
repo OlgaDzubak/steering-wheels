@@ -78,7 +78,7 @@ Error generating stack: `+o.message+`
   box-sizing: border-box;
 }
 
-@font-face {
+  @font-face {
     src: url('../src/assets/fonts/Manrope-Regular.ttf') format('ttf');
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
@@ -102,14 +102,12 @@ Error generating stack: `+o.message+`
     font-style: normal;
   }
 
-    :root {
-    
+  :root {    
     --text-color: rgba(30, 30, 30);
     --back-color: rgba(30, 30, 30, 0.1);
     --shadow-color: rgba(200, 200, 200, 0.7);
     --whitetwenty-color: rgba(243, 243, 243, 0.2);
     --whitefifty-color: rgba(243, 243, 243, 0.5);
-    //--whitefourty-color: rgba(243, 243, 243, 0.4);
     --transition: 300ms ease-in; 
     --container-padding: 20px;
   }
@@ -122,27 +120,26 @@ Error generating stack: `+o.message+`
     line-height: 1.2;
   }
 
-h1, h2, p {
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-}
-button {
-  cursor: pointer;
-  font-family: inherit;
-}
+  h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+    
+  img {
+    display: block;
+    max-width: 100%;
+  }
 `,Lv="modulepreload",Mv=function(e){return"/steering-wheels/"+e},Ns={},Iv=function(t,n,r){if(!n||n.length===0)return t();const l=document.getElementsByTagName("link");return Promise.all(n.map(o=>{if(o=Mv(o),o in Ns)return;Ns[o]=!0;const i=o.endsWith(".css"),u=i?'[rel="stylesheet"]':"";if(!!r)for(let h=l.length-1;h>=0;h--){const p=l[h];if(p.href===o&&(!i||p.rel==="stylesheet"))return}else if(document.querySelector(`link[href="${o}"]${u}`))return;const s=document.createElement("link");if(s.rel=i?"stylesheet":Lv,i||(s.as="script",s.crossOrigin=""),s.href=o,document.head.appendChild(s),i)return new Promise((h,p)=>{s.addEventListener("load",h),s.addEventListener("error",()=>p(new Error(`Unable to preload CSS for ${o}`)))})})).then(()=>t()).catch(o=>{const i=new Event("vite:preloadError",{cancelable:!0});if(i.payload=o,window.dispatchEvent(i),!i.defaultPrevented)throw o})};var $v=/^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|enterKeyHint|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/,Fv=od(function(e){return $v.test(e)||e.charCodeAt(0)===111&&e.charCodeAt(1)===110&&e.charCodeAt(2)<91}),jv=Fv,Dv=function(t){return t!=="theme"},Ts=function(t){return typeof t=="string"&&t.charCodeAt(0)>96?jv:Dv},Rs=function(t,n,r){var l;if(n){var o=n.shouldForwardProp;l=t.__emotion_forwardProp&&o?function(i){return t.__emotion_forwardProp(i)&&o(i)}:o}return typeof l!="function"&&r&&(l=t.__emotion_forwardProp),l},Av=function(t){var n=t.cache,r=t.serialized,l=t.isStringTag;return Gu(n,r,l),hd(function(){return Xu(n,r,l)}),null},Uv=function e(t,n){var r=t.__emotion_real===t,l=r&&t.__emotion_base||t,o,i;n!==void 0&&(o=n.label,i=n.target);var u=Rs(t,n,r),a=u||Ts(l),s=!a("as");return function(){var h=arguments,p=r&&t.__emotion_styles!==void 0?t.__emotion_styles.slice(0):[];if(o!==void 0&&p.push("label:"+o+";"),h[0]==null||h[0].raw===void 0)p.push.apply(p,h);else{p.push(h[0][0]);for(var m=h.length,w=1;w<m;w++)p.push(h[w],h[0][w])}var y=Ju(function(v,k,f){var c=s&&v.as||l,d="",g=[],E=v;if(v.theme==null){E={};for(var C in v)E[C]=v[C];E.theme=N.useContext(qu)}typeof v.className=="string"?d=fd(k.registered,g,v.className):v.className!=null&&(d=v.className+" ");var x=co(p.concat(g),k.registered,E);d+=k.key+"-"+x.name,i!==void 0&&(d+=" "+i);var T=s&&u===void 0?Ts(c):a,D={};for(var z in v)s&&z==="as"||T(z)&&(D[z]=v[z]);return D.className=d,D.ref=f,N.createElement(N.Fragment,null,N.createElement(Av,{cache:k,serialized:x,isStringTag:typeof c=="string"}),N.createElement(c,D))});return y.displayName=o!==void 0?o:"Styled("+(typeof l=="string"?l:l.displayName||l.name||"Component")+")",y.defaultProps=t.defaultProps,y.__emotion_real=y,y.__emotion_base=l,y.__emotion_styles=p,y.__emotion_forwardProp=u,Object.defineProperty(y,"toString",{value:function(){return"."+i}}),y.withComponent=function(v,k){return e(v,Vi({},n,k,{shouldForwardProp:Rs(y,k,!0)})).apply(void 0,p)},y}},Bv=["a","abbr","address","area","article","aside","audio","b","base","bdi","bdo","big","blockquote","body","br","button","canvas","caption","cite","code","col","colgroup","data","datalist","dd","del","details","dfn","dialog","div","dl","dt","em","embed","fieldset","figcaption","figure","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","iframe","img","input","ins","kbd","keygen","label","legend","li","link","main","map","mark","marquee","menu","menuitem","meta","meter","nav","noscript","object","ol","optgroup","option","output","p","param","picture","pre","progress","q","rp","rt","ruby","s","samp","script","section","select","small","source","span","strong","style","sub","summary","sup","table","tbody","td","textarea","tfoot","th","thead","time","title","tr","track","u","ul","var","video","wbr","circle","clipPath","defs","ellipse","foreignObject","g","image","line","linearGradient","mask","path","pattern","polygon","polyline","radialGradient","rect","stop","svg","text","tspan"],Ol=Uv.bind();Bv.forEach(function(e){Ol[e]=Ol(e)});const Vv=Ol.div`
 padding : var(--container-padding);
 display: flex;
@@ -172,4 +169,4 @@ screen and (min-resolution : 1dppx) and (max-width: 767.8px){
     font-size: 16px;
     line-height: 1;
   }
-`,Hv=()=>Ve.jsx(Vv,{children:Ve.jsx(Wv,{children:"Page not found! Please chech the path and try again."})}),Qv=N.lazy(()=>Iv(()=>import("./HomePage-456dda52.js").then(e=>e.H),[]));function Kv(){return Ve.jsxs(Nm,{children:[Ve.jsx(ji,{path:"/",element:Ve.jsx(Qv,{})}),Ve.jsx(ji,{path:"*",element:Ve.jsx(Hv,{})})]})}Ai.createRoot(document.getElementById("root")).render(Ve.jsx(Us.StrictMode,{children:Ve.jsxs(Rm,{basename:"/steering-wheels",children:[Ve.jsx(zv,{styles:Ov}),Ve.jsx(Kv,{})]})}));export{Us as R,Vi as _,Wh as a,Ve as b,vd as c,Iv as d,Yv as e,zs as g,Fv as i,Xv as j,Zv as k,Gv as m,Ol as n,N as r};
+`,Hv=()=>Ve.jsx(Vv,{children:Ve.jsx(Wv,{children:"Page not found! Please chech the path and try again."})}),Qv=N.lazy(()=>Iv(()=>import("./HomePage-45e2ddd8.js").then(e=>e.H),[]));function Kv(){return Ve.jsxs(Nm,{children:[Ve.jsx(ji,{path:"/",element:Ve.jsx(Qv,{})}),Ve.jsx(ji,{path:"*",element:Ve.jsx(Hv,{})})]})}Ai.createRoot(document.getElementById("root")).render(Ve.jsx(Us.StrictMode,{children:Ve.jsxs(Rm,{basename:"/steering-wheels",children:[Ve.jsx(zv,{styles:Ov}),Ve.jsx(Kv,{})]})}));export{Us as R,Vi as _,Wh as a,Ve as b,vd as c,Iv as d,Yv as e,zs as g,Fv as i,Xv as j,Zv as k,Gv as m,Ol as n,N as r};
