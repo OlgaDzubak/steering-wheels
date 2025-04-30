@@ -1,25 +1,10 @@
 import Select from 'react-select';
 import contentData from '../../helpers/language';
-import {    Header_, 
-            Container, 
-            LanguageSelectDiv,
-            SelectLabel,
-            SelectStyles,
-            Header_TitleContainer, 
-            Header_RightContainer,
-            Header_Title, 
-            Header_SubTitle,
-            Header_Contacts_ul, 
-            Header_ContactsContainer, 
-            Header_Contacts_li, 
-            Header_P,
-            Header_A,
-            SocialLinks_ul,
-            SocialLinks_li,
-            SocialLinks_A,
-            StyledInstagramSVG,
-            StyledViberSVG,
-            StyledTelegramSVG   } from './Header.styled';
+import {    Header_, Container, LanguageSelectDiv, SelectLabel, SelectStyles,
+            Header_TitleContainer, Header_RightContainer, Header_Title, Header_SubTitle,
+            Header_ContactsContainer, Header_Contacts_ul, Header_Contacts_li, Header_P, Header_A,
+            SocialLinks_ul, SocialLinks_li, SocialLinks_A,
+            StyledInstagramSVG, StyledViberSVG, StyledTelegramSVG } from './Header.styled';
 
 const Header = ({language, onLanguageChange}) => {
 

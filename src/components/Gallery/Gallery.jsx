@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import contentData from '../../helpers/language';
-import { Loader } from '../Loader/Loader.styled';
 import { ThreeDots } from 'react-loader-spinner';
-import {Gallery_ul} from '../Gallery/Gallery.styled';
 import getPhotos from '../../api_operations/getPhotos';
 import GalleryItem from "../GalleryItem/GalleryItem";
 import Paginator from "../Paginator/Paginator";
 import FsLightbox from "fslightbox-react";
+import { Loader } from '../Loader/Loader.styled';
+import {Gallery_ul} from '../Gallery/Gallery.styled';
 
 
 const Gallery = ({language}) => {
@@ -51,7 +51,6 @@ const Gallery = ({language}) => {
             setPage(chosenPage+1);
         }
   };
-
 
   function openLightboxOnSlide(number) {
 		setLightboxController({
