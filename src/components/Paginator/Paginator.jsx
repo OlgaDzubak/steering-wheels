@@ -1,7 +1,6 @@
-import { StyledReactPaginate } from './Paginator.styled';
 import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
 import scrollToTop from '../../helpers/scrollToTop';
-
+import { StyledReactPaginate } from './Paginator.styled';
 
 export const Paginator = ({ handlePageClick, pageCount, isLoading }) => {
 

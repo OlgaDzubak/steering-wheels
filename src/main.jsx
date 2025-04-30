@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import { Global } from '@emotion/react';
 import GlobalStyles from './GlobalStyled.js';
-import App from './App';
+import App from './App.jsx';
 
 
 

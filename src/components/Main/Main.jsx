@@ -1,5 +1,6 @@
-import { lazy } from 'react';
-const Gallery = lazy(() => import('../../../src/components/Gallery/Gallery'));
+// import { lazy } from 'react';
+// const Gallery = lazy(() => import('../../../src/components/Gallery/Gallery'));
+import Gallery from '../Gallery/Gallery';
 import { Container, GalleryTitle } from './Main.styled';
 import contentData from '../../helpers/language';
 
