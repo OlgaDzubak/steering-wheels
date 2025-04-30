@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const GlobalStyles = css`
 *,
@@ -70,5 +71,11 @@ const GlobalStyles = css`
     max-width: 100%;
   }
 `;
+
+module.exports = {
+  plugins: [
+    new BundleAnalyzerPlugin()
+  ]
+}
 
 export default GlobalStyles;

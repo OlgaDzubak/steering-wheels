@@ -4610,6 +4610,11 @@ util-deprecate@^1.0.1:
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
+vite-bundle-analyzer@^0.20.1:
+  version "0.20.1"
+  resolved "https://registry.npmjs.org/vite-bundle-analyzer/-/vite-bundle-analyzer-0.20.1.tgz"
+  integrity sha512-0uGcukPglrNUM5/0gPMQSLOaq2YXeyt+YCHfpZZJxnfl0oucx7zdZmVxVL4c0SlsBD0gNOPZd1GNYwg44MRTeQ==
+
 vite-plugin-svgr@^3.2.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/vite-plugin-svgr/-/vite-plugin-svgr-3.3.0.tgz"

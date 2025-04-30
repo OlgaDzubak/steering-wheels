@@ -4,6 +4,7 @@ import { lazy } from 'react';
 import ErrorPage from './pages/ErrorPage';
 const HomePage = lazy(() => import('../src/pages/HomePage'));
 
+
 function App() {
 
   return  <Routes>
