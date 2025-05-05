@@ -111,7 +111,7 @@ export const Header_Title = styled.h1`
         text-align: center;
     }
 
-    @media screen and (min-width: 300px) and (max-width: 419.8px){
+    @media screen and (min-width: 300px) and (max-width: 419.98px){
         font-size: 32px;
         text-align: center;
     }
@@ -121,11 +121,11 @@ export const Header_Title = styled.h1`
         text-align: center;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 908.8px){
+    @media screen and (min-width: 768px) and (max-width: 908.98px){
         font-size: 40px;
     }
 
-    @media screen and (min-width: 909px) and (max-width: 1399.8px){
+    @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 44px;
     }  
     
