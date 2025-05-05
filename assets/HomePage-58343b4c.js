@@ -1,4 +1,4 @@
-import{r as o,k as mo,j as ie,_ as le,a as ho,c as go,n as ue,b as H,R as Te,m as ul,i as ha,d as Nt,g as vo}from"./index-2e2553be.js";const dl=(t,e)=>{const[n,a]=o.useState(()=>{try{const i=localStorage.getItem(t);return i?JSON.parse(i):(localStorage.setItem(t,JSON.stringify(e)),e)}catch{return e}});return[n,i=>{try{localStorage.setItem(t,JSON.stringify(i))}catch(s){console.log(s)}a(i)}]},qe={metaLang:{ua:"uk",ru:"ru"},metaDescription:{ua:"Автомобілістам. Перетяжка потертого керма та дрібних деталей автомобілів в шкіру або замінник (ручки КПП, пильники, підлокітники, дверні картки та інше).",ru:"Автомобилистам. Перетяжка потёртого руля и мелких деталей автомобилей в кожу или заменитель (ручки КПП, пыльники, подлокотники, дверные карты и др.)."},pageTitle:{ua:"Перетяжка рулів",ru:"Перетяжка рулей"},title:{ua:"Перетяжка керма та дрібних деталей автомобілів",ru:"Перетяжка рулей и мелких деталей автомобилей"},subTitle:{ua:"(ручки КПП, пильники, підлокітники, дверні картки та інше)",ru:"(ручки КПП, пыльники, подлокотники, дверные карточки и прочее)"},address:{ua:"м. Дніпро",ru:"г. Днепр"},galleryTitle:{ua:"Галерея виконаних робіт",ru:"Галерея выполненных работ"},descriptionField:{ua:"photo_description_ua",ru:"photo_description_ru"}};function gt(t){"@babel/helpers - typeof";return gt=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(e){return typeof e}:function(e){return e&&typeof Symbol=="function"&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},gt(t)}function fl(t,e){if(gt(t)!="object"||!t)return t;var n=t[Symbol.toPrimitive];if(n!==void 0){var a=n.call(t,e||"default");if(gt(a)!="object")return a;throw new TypeError("@@toPrimitive must return a primitive value.")}return(e==="string"?String:Number)(t)}function bo(t){var e=fl(t,"string");return gt(e)=="symbol"?e:String(e)}function Pt(t,e,n){return e=bo(e),e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}function ga(t,e){var n=Object.keys(t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(t);e&&(a=a.filter(function(r){return Object.getOwnPropertyDescriptor(t,r).enumerable})),n.push.apply(n,a)}return n}function oe(t){for(var e=1;e<arguments.length;e++){var n=arguments[e]!=null?arguments[e]:{};e%2?ga(Object(n),!0).forEach(function(a){Pt(t,a,n[a])}):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(n)):ga(Object(n)).forEach(function(a){Object.defineProperty(t,a,Object.getOwnPropertyDescriptor(n,a))})}return t}function pl(t){if(Array.isArray(t))return t}function ml(t,e){var n=t==null?null:typeof Symbol<"u"&&t[Symbol.iterator]||t["@@iterator"];if(n!=null){var a,r,i,s,c=[],l=!0,u=!1;try{if(i=(n=n.call(t)).next,e===0){if(Object(n)!==n)return;l=!1}else for(;!(l=(a=i.call(n)).done)&&(c.push(a.value),c.length!==e);l=!0);}catch(d){u=!0,r=d}finally{try{if(!l&&n.return!=null&&(s=n.return(),Object(s)!==s))return}finally{if(u)throw r}}return c}}function xr(t,e){(e==null||e>t.length)&&(e=t.length);for(var n=0,a=new Array(e);n<e;n++)a[n]=t[n];return a}function yo(t,e){if(t){if(typeof t=="string")return xr(t,e);var n=Object.prototype.toString.call(t).slice(8,-1);if(n==="Object"&&t.constructor&&(n=t.constructor.name),n==="Map"||n==="Set")return Array.from(t);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return xr(t,e)}}function hl(){throw new TypeError(`Invalid attempt to destructure non-iterable instance.
+import{r as o,k as mo,j as ie,_ as le,a as ho,c as go,n as ue,b as H,R as Te,m as ul,i as ha,d as Nt,g as vo}from"./index-714c58a0.js";const dl=(t,e)=>{const[n,a]=o.useState(()=>{try{const i=localStorage.getItem(t);return i?JSON.parse(i):(localStorage.setItem(t,JSON.stringify(e)),e)}catch{return e}});return[n,i=>{try{localStorage.setItem(t,JSON.stringify(i))}catch(s){console.log(s)}a(i)}]},qe={metaLang:{ua:"uk",ru:"ru"},metaDescription:{ua:"Автомобілістам. Перетяжка потертого керма та дрібних деталей автомобілів в шкіру або замінник (ручки КПП, пильники, підлокітники, дверні картки та інше).",ru:"Автомобилистам. Перетяжка потёртого руля и мелких деталей автомобилей в кожу или заменитель (ручки КПП, пыльники, подлокотники, дверные карты и др.)."},pageTitle:{ua:"Перетяжка рулів",ru:"Перетяжка рулей"},title:{ua:"Перетяжка керма та дрібних деталей автомобілів",ru:"Перетяжка рулей и мелких деталей автомобилей"},subTitle:{ua:"(ручки КПП, пильники, підлокітники, дверні картки та інше)",ru:"(ручки КПП, пыльники, подлокотники, дверные карточки и прочее)"},address:{ua:"м. Дніпро",ru:"г. Днепр"},galleryTitle:{ua:"Галерея виконаних робіт",ru:"Галерея выполненных работ"},descriptionField:{ua:"photo_description_ua",ru:"photo_description_ru"}};function gt(t){"@babel/helpers - typeof";return gt=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(e){return typeof e}:function(e){return e&&typeof Symbol=="function"&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},gt(t)}function fl(t,e){if(gt(t)!="object"||!t)return t;var n=t[Symbol.toPrimitive];if(n!==void 0){var a=n.call(t,e||"default");if(gt(a)!="object")return a;throw new TypeError("@@toPrimitive must return a primitive value.")}return(e==="string"?String:Number)(t)}function bo(t){var e=fl(t,"string");return gt(e)=="symbol"?e:String(e)}function Pt(t,e,n){return e=bo(e),e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}function ga(t,e){var n=Object.keys(t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(t);e&&(a=a.filter(function(r){return Object.getOwnPropertyDescriptor(t,r).enumerable})),n.push.apply(n,a)}return n}function oe(t){for(var e=1;e<arguments.length;e++){var n=arguments[e]!=null?arguments[e]:{};e%2?ga(Object(n),!0).forEach(function(a){Pt(t,a,n[a])}):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(n)):ga(Object(n)).forEach(function(a){Object.defineProperty(t,a,Object.getOwnPropertyDescriptor(n,a))})}return t}function pl(t){if(Array.isArray(t))return t}function ml(t,e){var n=t==null?null:typeof Symbol<"u"&&t[Symbol.iterator]||t["@@iterator"];if(n!=null){var a,r,i,s,c=[],l=!0,u=!1;try{if(i=(n=n.call(t)).next,e===0){if(Object(n)!==n)return;l=!1}else for(;!(l=(a=i.call(n)).done)&&(c.push(a.value),c.length!==e);l=!0);}catch(d){u=!0,r=d}finally{try{if(!l&&n.return!=null&&(s=n.return(),Object(s)!==s))return}finally{if(u)throw r}}return c}}function xr(t,e){(e==null||e>t.length)&&(e=t.length);for(var n=0,a=new Array(e);n<e;n++)a[n]=t[n];return a}function yo(t,e){if(t){if(typeof t=="string")return xr(t,e);var n=Object.prototype.toString.call(t).slice(8,-1);if(n==="Object"&&t.constructor&&(n=t.constructor.name),n==="Map"||n==="Set")return Array.from(t);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return xr(t,e)}}function hl(){throw new TypeError(`Invalid attempt to destructure non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function ot(t,e){return pl(t)||ml(t,e)||yo(t,e)||hl()}function gl(t,e){if(t==null)return{};var n={},a=Object.keys(t),r,i;for(i=0;i<a.length;i++)r=a[i],!(e.indexOf(r)>=0)&&(n[r]=t[r]);return n}function lt(t,e){if(t==null)return{};var n=gl(t,e),a,r;if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(t);for(r=0;r<i.length;r++)a=i[r],!(e.indexOf(a)>=0)&&Object.prototype.propertyIsEnumerable.call(t,a)&&(n[a]=t[a])}return n}var vl=["defaultInputValue","defaultMenuIsOpen","defaultValue","inputValue","menuIsOpen","onChange","onInputChange","onMenuClose","onMenuOpen","value"];function bl(t){var e=t.defaultInputValue,n=e===void 0?"":e,a=t.defaultMenuIsOpen,r=a===void 0?!1:a,i=t.defaultValue,s=i===void 0?null:i,c=t.inputValue,l=t.menuIsOpen,u=t.onChange,d=t.onInputChange,f=t.onMenuClose,_=t.onMenuOpen,S=t.value,g=lt(t,vl),b=o.useState(c!==void 0?c:n),y=ot(b,2),E=y[0],R=y[1],V=o.useState(l!==void 0?l:r),B=ot(V,2),G=B[0],W=B[1],K=o.useState(S!==void 0?S:s),Y=ot(K,2),re=Y[0],ve=Y[1],Ce=o.useCallback(function(he,U){typeof u=="function"&&u(he,U),ve(he)},[u]),X=o.useCallback(function(he,U){var P;typeof d=="function"&&(P=d(he,U)),R(P!==void 0?P:he)},[d]),z=o.useCallback(function(){typeof _=="function"&&_(),W(!0)},[_]),Z=o.useCallback(function(){typeof f=="function"&&f(),W(!1)},[f]),J=c!==void 0?c:E,ye=l!==void 0?l:G,Ee=S!==void 0?S:re;return oe(oe({},g),{},{inputValue:J,menuIsOpen:ye,onChange:Ce,onInputChange:X,onMenuClose:Z,onMenuOpen:z,value:Ee})}function yl(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function va(t,e){for(var n=0;n<e.length;n++){var a=e[n];a.enumerable=a.enumerable||!1,a.configurable=!0,"value"in a&&(a.writable=!0),Object.defineProperty(t,bo(a.key),a)}}function xl(t,e,n){return e&&va(t.prototype,e),n&&va(t,n),Object.defineProperty(t,"prototype",{writable:!1}),t}function Er(t,e){return Er=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(a,r){return a.__proto__=r,a},Er(t,e)}function El(t,e){if(typeof e!="function"&&e!==null)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),Object.defineProperty(t,"prototype",{writable:!1}),e&&Er(t,e)}function hn(t){return hn=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(n){return n.__proto__||Object.getPrototypeOf(n)},hn(t)}function _l(){if(typeof Reflect>"u"||!Reflect.construct||Reflect.construct.sham)return!1;if(typeof Proxy=="function")return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){})),!0}catch{return!1}}function wl(t){if(t===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}function Sl(t,e){if(e&&(gt(e)==="object"||typeof e=="function"))return e;if(e!==void 0)throw new TypeError("Derived constructors may only return object or undefined");return wl(t)}function Ml(t){var e=_l();return function(){var a=hn(t),r;if(e){var i=hn(this).constructor;r=Reflect.construct(a,arguments,i)}else r=a.apply(this,arguments);return Sl(this,r)}}function Cl(t){if(Array.isArray(t))return xr(t)}function Ll(t){if(typeof Symbol<"u"&&t[Symbol.iterator]!=null||t["@@iterator"]!=null)return Array.from(t)}function Il(){throw new TypeError(`Invalid attempt to spread non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function Rr(t){return Cl(t)||Ll(t)||yo(t)||Il()}function Ol(t,e){return e||(e=t.slice(0)),Object.freeze(Object.defineProperties(t,{raw:{value:Object.freeze(e)}}))}const Dl=Math.min,Nl=Math.max,gn=Math.round,Kt=Math.floor,vn=t=>({x:t,y:t});function Pl(t){return{...t,top:t.y,left:t.x,right:t.x+t.width,bottom:t.y+t.height}}function xo(t){return _o(t)?(t.nodeName||"").toLowerCase():"#document"}function Qe(t){var e;return(t==null||(e=t.ownerDocument)==null?void 0:e.defaultView)||window}function Eo(t){var e;return(e=(_o(t)?t.ownerDocument:t.document)||window.document)==null?void 0:e.documentElement}function _o(t){return t instanceof Node||t instanceof Qe(t).Node}function _r(t){return t instanceof Element||t instanceof Qe(t).Element}function jr(t){return t instanceof HTMLElement||t instanceof Qe(t).HTMLElement}function ba(t){return typeof ShadowRoot>"u"?!1:t instanceof ShadowRoot||t instanceof Qe(t).ShadowRoot}function wo(t){const{overflow:e,overflowX:n,overflowY:a,display:r}=Xr(t);return/auto|scroll|overlay|hidden|clip/.test(e+a+n)&&!["inline","contents"].includes(r)}function Al(){return typeof CSS>"u"||!CSS.supports?!1:CSS.supports("-webkit-backdrop-filter","none")}function Tl(t){return["html","body","#document"].includes(xo(t))}function Xr(t){return Qe(t).getComputedStyle(t)}function Fl(t){if(xo(t)==="html")return t;const e=t.assignedSlot||t.parentNode||ba(t)&&t.host||Eo(t);return ba(e)?e.host:e}function So(t){const e=Fl(t);return Tl(e)?t.ownerDocument?t.ownerDocument.body:t.body:jr(e)&&wo(e)?e:So(e)}function bn(t,e,n){var a;e===void 0&&(e=[]),n===void 0&&(n=!0);const r=So(t),i=r===((a=t.ownerDocument)==null?void 0:a.body),s=Qe(r);return i?e.concat(s,s.visualViewport||[],wo(r)?r:[],s.frameElement&&n?bn(s.frameElement):[]):e.concat(r,bn(r,[],n))}function kl(t){const e=Xr(t);let n=parseFloat(e.width)||0,a=parseFloat(e.height)||0;const r=jr(t),i=r?t.offsetWidth:n,s=r?t.offsetHeight:a,c=gn(n)!==i||gn(a)!==s;return c&&(n=i,a=s),{width:n,height:a,$:c}}function Vr(t){return _r(t)?t:t.contextElement}function Qn(t){const e=Vr(t);if(!jr(e))return vn(1);const n=e.getBoundingClientRect(),{width:a,height:r,$:i}=kl(e);let s=(i?gn(n.width):n.width)/a,c=(i?gn(n.height):n.height)/r;return(!s||!Number.isFinite(s))&&(s=1),(!c||!Number.isFinite(c))&&(c=1),{x:s,y:c}}const Rl=vn(0);function jl(t){const e=Qe(t);return!Al()||!e.visualViewport?Rl:{x:e.visualViewport.offsetLeft,y:e.visualViewport.offsetTop}}function Xl(t,e,n){return e===void 0&&(e=!1),!n||e&&n!==Qe(t)?!1:e}function ya(t,e,n,a){e===void 0&&(e=!1),n===void 0&&(n=!1);const r=t.getBoundingClientRect(),i=Vr(t);let s=vn(1);e&&(a?_r(a)&&(s=Qn(a)):s=Qn(t));const c=Xl(i,n,a)?jl(i):vn(0);let l=(r.left+c.x)/s.x,u=(r.top+c.y)/s.y,d=r.width/s.x,f=r.height/s.y;if(i){const _=Qe(i),S=a&&_r(a)?Qe(a):a;let g=_.frameElement;for(;g&&a&&S!==_;){const b=Qn(g),y=g.getBoundingClientRect(),E=Xr(g),R=y.left+(g.clientLeft+parseFloat(E.paddingLeft))*b.x,V=y.top+(g.clientTop+parseFloat(E.paddingTop))*b.y;l*=b.x,u*=b.y,d*=b.x,f*=b.y,l+=R,u+=V,g=Qe(g).frameElement}}return Pl({width:d,height:f,x:l,y:u})}function Vl(t,e){let n=null,a;const r=Eo(t);function i(){clearTimeout(a),n&&n.disconnect(),n=null}function s(c,l){c===void 0&&(c=!1),l===void 0&&(l=1),i();const{left:u,top:d,width:f,height:_}=t.getBoundingClientRect();if(c||e(),!f||!_)return;const S=Kt(d),g=Kt(r.clientWidth-(u+f)),b=Kt(r.clientHeight-(d+_)),y=Kt(u),R={rootMargin:-S+"px "+-g+"px "+-b+"px "+-y+"px",threshold:Nl(0,Dl(1,l))||1};let V=!0;function B(G){const W=G[0].intersectionRatio;if(W!==l){if(!V)return s();W?s(!1,W):a=setTimeout(()=>{s(!1,1e-7)},100)}V=!1}try{n=new IntersectionObserver(B,{...R,root:r.ownerDocument})}catch{n=new IntersectionObserver(B,R)}n.observe(t)}return s(!0),i}function Hl(t,e,n,a){a===void 0&&(a={});const{ancestorScroll:r=!0,ancestorResize:i=!0,elementResize:s=typeof ResizeObserver=="function",layoutShift:c=typeof IntersectionObserver=="function",animationFrame:l=!1}=a,u=Vr(t),d=r||i?[...u?bn(u):[],...bn(e)]:[];d.forEach(E=>{r&&E.addEventListener("scroll",n,{passive:!0}),i&&E.addEventListener("resize",n)});const f=u&&c?Vl(u,n):null;let _=-1,S=null;s&&(S=new ResizeObserver(E=>{let[R]=E;R&&R.target===u&&S&&(S.unobserve(e),cancelAnimationFrame(_),_=requestAnimationFrame(()=>{S&&S.observe(e)})),n()}),u&&!l&&S.observe(u),S.observe(e));let g,b=l?ya(t):null;l&&y();function y(){const E=ya(t);b&&(E.x!==b.x||E.y!==b.y||E.width!==b.width||E.height!==b.height)&&n(),b=E,g=requestAnimationFrame(y)}return n(),()=>{d.forEach(E=>{r&&E.removeEventListener("scroll",n),i&&E.removeEventListener("resize",n)}),f&&f(),S&&S.disconnect(),S=null,l&&cancelAnimationFrame(g)}}var wr=o.useLayoutEffect,Bl=["className","clearValue","cx","getStyles","getClassNames","getValue","hasValue","isMulti","isRtl","options","selectOption","selectProps","setValue","theme"],yn=function(){};function $l(t,e){return e?e[0]==="-"?t+e:t+"__"+e:t}function zl(t,e){for(var n=arguments.length,a=new Array(n>2?n-2:0),r=2;r<n;r++)a[r-2]=arguments[r];var i=[].concat(a);if(e&&t)for(var s in e)e.hasOwnProperty(s)&&e[s]&&i.push("".concat($l(t,s)));return i.filter(function(c){return c}).map(function(c){return String(c).trim()}).join(" ")}var xa=function(e){return Zl(e)?e.filter(Boolean):gt(e)==="object"&&e!==null?[e]:[]},Mo=function(e){e.className,e.clearValue,e.cx,e.getStyles,e.getClassNames,e.getValue,e.hasValue,e.isMulti,e.isRtl,e.options,e.selectOption,e.selectProps,e.setValue,e.theme;var n=lt(e,Bl);return oe({},n)},ke=function(e,n,a){var r=e.cx,i=e.getStyles,s=e.getClassNames,c=e.className;return{css:i(n,e),className:r(a??{},s(n,e),c)}};function Cn(t){return[document.documentElement,document.body,window].indexOf(t)>-1}function Ul(t){return Cn(t)?window.innerHeight:t.clientHeight}function Co(t){return Cn(t)?window.pageYOffset:t.scrollTop}function xn(t,e){if(Cn(t)){window.scrollTo(0,e);return}t.scrollTop=e}function Wl(t){var e=getComputedStyle(t),n=e.position==="absolute",a=/(auto|scroll)/;if(e.position==="fixed")return document.documentElement;for(var r=t;r=r.parentElement;)if(e=getComputedStyle(r),!(n&&e.position==="static")&&a.test(e.overflow+e.overflowY+e.overflowX))return r;return document.documentElement}function ql(t,e,n,a){return n*((t=t/a-1)*t*t+1)+e}function Qt(t,e){var n=arguments.length>2&&arguments[2]!==void 0?arguments[2]:200,a=arguments.length>3&&arguments[3]!==void 0?arguments[3]:yn,r=Co(t),i=e-r,s=10,c=0;function l(){c+=s;var u=ql(c,r,i,n);xn(t,u),c<n?window.requestAnimationFrame(l):a(t)}l()}function Ea(t,e){var n=t.getBoundingClientRect(),a=e.getBoundingClientRect(),r=e.offsetHeight/3;a.bottom+r>n.bottom?xn(t,Math.min(e.offsetTop+e.clientHeight-t.offsetHeight+r,t.scrollHeight)):a.top-r<n.top&&xn(t,Math.max(e.offsetTop-r,0))}function Gl(t){var e=t.getBoundingClientRect();return{bottom:e.bottom,height:e.height,left:e.left,right:e.right,top:e.top,width:e.width}}function _a(){try{return document.createEvent("TouchEvent"),!0}catch{return!1}}function Yl(){try{return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)}catch{return!1}}var Lo=!1,Jl={get passive(){return Lo=!0}},Zt=typeof window<"u"?window:{};Zt.addEventListener&&Zt.removeEventListener&&(Zt.addEventListener("p",yn,Jl),Zt.removeEventListener("p",yn,!1));var Kl=Lo;function Ql(t){return t!=null}function Zl(t){return Array.isArray(t)}function en(t,e,n){return t?e:n}var ec=function(e){for(var n=arguments.length,a=new Array(n>1?n-1:0),r=1;r<n;r++)a[r-1]=arguments[r];var i=Object.entries(e).filter(function(s){var c=ot(s,1),l=c[0];return!a.includes(l)});return i.reduce(function(s,c){var l=ot(c,2),u=l[0],d=l[1];return s[u]=d,s},{})},tc=["children","innerProps"],nc=["children","innerProps"];function rc(t){var e=t.maxHeight,n=t.menuEl,a=t.minHeight,r=t.placement,i=t.shouldScroll,s=t.isFixedPosition,c=t.controlHeight,l=Wl(n),u={placement:"bottom",maxHeight:e};if(!n||!n.offsetParent)return u;var d=l.getBoundingClientRect(),f=d.height,_=n.getBoundingClientRect(),S=_.bottom,g=_.height,b=_.top,y=n.offsetParent.getBoundingClientRect(),E=y.top,R=s?window.innerHeight:Ul(l),V=Co(l),B=parseInt(getComputedStyle(n).marginBottom,10),G=parseInt(getComputedStyle(n).marginTop,10),W=E-G,K=R-b,Y=W+V,re=f-V-b,ve=S-R+V+B,Ce=V+b-G,X=160;switch(r){case"auto":case"bottom":if(K>=g)return{placement:"bottom",maxHeight:e};if(re>=g&&!s)return i&&Qt(l,ve,X),{placement:"bottom",maxHeight:e};if(!s&&re>=a||s&&K>=a){i&&Qt(l,ve,X);var z=s?K-B:re-B;return{placement:"bottom",maxHeight:z}}if(r==="auto"||s){var Z=e,J=s?W:Y;return J>=a&&(Z=Math.min(J-B-c,e)),{placement:"top",maxHeight:Z}}if(r==="bottom")return i&&xn(l,ve),{placement:"bottom",maxHeight:e};break;case"top":if(W>=g)return{placement:"top",maxHeight:e};if(Y>=g&&!s)return i&&Qt(l,Ce,X),{placement:"top",maxHeight:e};if(!s&&Y>=a||s&&W>=a){var ye=e;return(!s&&Y>=a||s&&W>=a)&&(ye=s?W-G:Y-G),i&&Qt(l,Ce,X),{placement:"top",maxHeight:ye}}return{placement:"bottom",maxHeight:e};default:throw new Error('Invalid placement provided "'.concat(r,'".'))}return u}function ac(t){var e={bottom:"top",top:"bottom"};return t?e[t]:"bottom"}var Io=function(e){return e==="auto"?"bottom":e},ic=function(e,n){var a,r=e.placement,i=e.theme,s=i.borderRadius,c=i.spacing,l=i.colors;return oe((a={label:"menu"},Pt(a,ac(r),"100%"),Pt(a,"position","absolute"),Pt(a,"width","100%"),Pt(a,"zIndex",1),a),n?{}:{backgroundColor:l.neutral0,borderRadius:s,boxShadow:"0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1)",marginBottom:c.menuGutter,marginTop:c.menuGutter})},Oo=o.createContext(null),oc=function(e){var n=e.children,a=e.minMenuHeight,r=e.maxMenuHeight,i=e.menuPlacement,s=e.menuPosition,c=e.menuShouldScrollIntoView,l=e.theme,u=o.useContext(Oo)||{},d=u.setPortalPlacement,f=o.useRef(null),_=o.useState(r),S=ot(_,2),g=S[0],b=S[1],y=o.useState(null),E=ot(y,2),R=E[0],V=E[1],B=l.spacing.controlHeight;return wr(function(){var G=f.current;if(G){var W=s==="fixed",K=c&&!W,Y=rc({maxHeight:r,menuEl:G,minHeight:a,placement:i,shouldScroll:K,isFixedPosition:W,controlHeight:B});b(Y.maxHeight),V(Y.placement),d==null||d(Y.placement)}},[r,i,s,c,a,d,B]),n({ref:f,placerProps:oe(oe({},e),{},{placement:R||Io(i),maxHeight:g})})},sc=function(e){var n=e.children,a=e.innerRef,r=e.innerProps;return ie("div",le({},ke(e,"menu",{menu:!0}),{ref:a},r),n)},lc=sc,cc=function(e,n){var a=e.maxHeight,r=e.theme.spacing.baseUnit;return oe({maxHeight:a,overflowY:"auto",position:"relative",WebkitOverflowScrolling:"touch"},n?{}:{paddingBottom:r,paddingTop:r})},uc=function(e){var n=e.children,a=e.innerProps,r=e.innerRef,i=e.isMulti;return ie("div",le({},ke(e,"menuList",{"menu-list":!0,"menu-list--is-multi":i}),{ref:r},a),n)},Do=function(e,n){var a=e.theme,r=a.spacing.baseUnit,i=a.colors;return oe({textAlign:"center"},n?{}:{color:i.neutral40,padding:"".concat(r*2,"px ").concat(r*3,"px")})},dc=Do,fc=Do,pc=function(e){var n=e.children,a=n===void 0?"No options":n,r=e.innerProps,i=lt(e,tc);return ie("div",le({},ke(oe(oe({},i),{},{children:a,innerProps:r}),"noOptionsMessage",{"menu-notice":!0,"menu-notice--no-options":!0}),r),a)},mc=function(e){var n=e.children,a=n===void 0?"Loading...":n,r=e.innerProps,i=lt(e,nc);return ie("div",le({},ke(oe(oe({},i),{},{children:a,innerProps:r}),"loadingMessage",{"menu-notice":!0,"menu-notice--loading":!0}),r),a)},hc=function(e){var n=e.rect,a=e.offset,r=e.position;return{left:n.left,position:r,top:a,width:n.width,zIndex:1}},gc=function(e){var n=e.appendTo,a=e.children,r=e.controlElement,i=e.innerProps,s=e.menuPlacement,c=e.menuPosition,l=o.useRef(null),u=o.useRef(null),d=o.useState(Io(s)),f=ot(d,2),_=f[0],S=f[1],g=o.useMemo(function(){return{setPortalPlacement:S}},[]),b=o.useState(null),y=ot(b,2),E=y[0],R=y[1],V=o.useCallback(function(){if(r){var K=Gl(r),Y=c==="fixed"?0:window.pageYOffset,re=K[_]+Y;(re!==(E==null?void 0:E.offset)||K.left!==(E==null?void 0:E.rect.left)||K.width!==(E==null?void 0:E.rect.width))&&R({offset:re,rect:K})}},[r,c,_,E==null?void 0:E.offset,E==null?void 0:E.rect.left,E==null?void 0:E.rect.width]);wr(function(){V()},[V]);var B=o.useCallback(function(){typeof u.current=="function"&&(u.current(),u.current=null),r&&l.current&&(u.current=Hl(r,l.current,V,{elementResize:"ResizeObserver"in window}))},[r,V]);wr(function(){B()},[B]);var G=o.useCallback(function(K){l.current=K,B()},[B]);if(!n&&c!=="fixed"||!E)return null;var W=ie("div",le({ref:G},ke(oe(oe({},e),{},{offset:E.offset,position:c,rect:E.rect}),"menuPortal",{"menu-portal":!0}),i),a);return ie(Oo.Provider,{value:g},n?ho.createPortal(W,n):W)},vc=function(e){var n=e.isDisabled,a=e.isRtl;return{label:"container",direction:a?"rtl":void 0,pointerEvents:n?"none":void 0,position:"relative"}},bc=function(e){var n=e.children,a=e.innerProps,r=e.isDisabled,i=e.isRtl;return ie("div",le({},ke(e,"container",{"--is-disabled":r,"--is-rtl":i}),a),n)},yc=function(e,n){var a=e.theme.spacing,r=e.isMulti,i=e.hasValue,s=e.selectProps.controlShouldRenderValue;return oe({alignItems:"center",display:r&&i&&s?"flex":"grid",flex:1,flexWrap:"wrap",WebkitOverflowScrolling:"touch",position:"relative",overflow:"hidden"},n?{}:{padding:"".concat(a.baseUnit/2,"px ").concat(a.baseUnit*2,"px")})},xc=function(e){var n=e.children,a=e.innerProps,r=e.isMulti,i=e.hasValue;return ie("div",le({},ke(e,"valueContainer",{"value-container":!0,"value-container--is-multi":r,"value-container--has-value":i}),a),n)},Ec=function(){return{alignItems:"center",alignSelf:"stretch",display:"flex",flexShrink:0}},_c=function(e){var n=e.children,a=e.innerProps;return ie("div",le({},ke(e,"indicatorsContainer",{indicators:!0}),a),n)},wa,wc=["size"],Sc=["innerProps","isRtl","size"],Mc={name:"8mmkcg",styles:"display:inline-block;fill:currentColor;line-height:1;stroke:currentColor;stroke-width:0"},No=function(e){var n=e.size,a=lt(e,wc);return ie("svg",le({height:n,width:n,viewBox:"0 0 20 20","aria-hidden":"true",focusable:"false",css:Mc},a))},Hr=function(e){return ie(No,le({size:20},e),ie("path",{d:"M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"}))},Po=function(e){return ie(No,le({size:20},e),ie("path",{d:"M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"}))},Ao=function(e,n){var a=e.isFocused,r=e.theme,i=r.spacing.baseUnit,s=r.colors;return oe({label:"indicatorContainer",display:"flex",transition:"color 150ms"},n?{}:{color:a?s.neutral60:s.neutral20,padding:i*2,":hover":{color:a?s.neutral80:s.neutral40}})},Cc=Ao,Lc=function(e){var n=e.children,a=e.innerProps;return ie("div",le({},ke(e,"dropdownIndicator",{indicator:!0,"dropdown-indicator":!0}),a),n||ie(Po,null))},Ic=Ao,Oc=function(e){var n=e.children,a=e.innerProps;return ie("div",le({},ke(e,"clearIndicator",{indicator:!0,"clear-indicator":!0}),a),n||ie(Hr,null))},Dc=function(e,n){var a=e.isDisabled,r=e.theme,i=r.spacing.baseUnit,s=r.colors;return oe({label:"indicatorSeparator",alignSelf:"stretch",width:1},n?{}:{backgroundColor:a?s.neutral10:s.neutral20,marginBottom:i*2,marginTop:i*2})},Nc=function(e){var n=e.innerProps;return ie("span",le({},n,ke(e,"indicatorSeparator",{"indicator-separator":!0})))},Pc=mo(wa||(wa=Ol([`
   0%, 80%, 100% { opacity: 0; }
@@ -74,7 +74,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         text-align: center;
     }
 
-    @media screen and (min-width: 420px) and (max-width: 767.8px){
+    @media screen and (min-width: 420px) and (max-width: 767.98px){
         font-size: 38px;
         text-align: center;
     }
@@ -99,23 +99,23 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         text-align: center;
     }
 
-    @media screen and (min-width: 300px) and (max-width: 419.8px){
+    @media screen and (min-width: 300px) and (max-width: 419.98px){
         font-size: 15px;
         margin-bottom: 15px;
         text-align: center;
     }
 
-    @media screen and (min-width: 420px) and (max-width: 767.8px){
+    @media screen and (min-width: 420px) and (max-width: 767.98px){
         font-size: 16px;
         text-align: center;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 908.8px){
+    @media screen and (min-width: 768px) and (max-width: 908.98px){
         font-size: 16px;
     }
 
 
-    @media screen and (min-width: 909px) and (max-width: 1399.8px){
+    @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 16px;
 
     }  
@@ -162,7 +162,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     margin-bottom: 11px;
     text-align: center;
 
-    @media screen and (min-width: 767.8px){
+    @media screen and (min-width: 767.98px){
         text-align: left;
     }
 
@@ -178,11 +178,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         color: darkred;
     };
 
-    @media screen and (min-width: 419.8px) and (max-width: 908.8px){
+    @media screen and (min-width: 419.98px) and (max-width: 908.98px){
         font-size: 16px;
     }
 
-    @media screen and (min-width:909px) and (max-width: 1399.8px){
+    @media screen and (min-width:909px) and (max-width: 1399.98px){
         font-size: 17px;
         
     }  
@@ -593,7 +593,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   align-items: flex-start;
   gap: 40px;
 
-  @media screen and (max-width: 767.8px){
+  @media screen and (max-width: 767.98px){
     flex-direction: column;
     row-gap: 15px;
     align-items: center;
@@ -605,7 +605,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     margin-bottom: 10px;
     align-items: center;
  
-    @media screen and (min-width: 768px) and (max-width: 1399.8px){
+    @media screen and (min-width: 768px) and (max-width: 1399.98px){
         width: 650px;
         align-items: flex-start;
     }  
@@ -619,52 +619,41 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     margin-bottom: 15px;
     text-align: center;
 
-    @media screen and (max-width: 419.8px){
+    @media screen and (max-width: 419.98px){
         font-size: 15px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 420px) and (max-width: 908.8px){
+    @media screen and (min-width: 420px) and (max-width: 908.98px){
         font-size: 18px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 909px) and (max-width: 1399.8px){
+    @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 24px;
     }  
     
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px){
+    @media screen and (min-width: 1400px){
         font-size: 32px;
     }     
 `,sm=ue.h4`
     text-align: center;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 299.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 299.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 299.8px){
+    @media screen and (max-width: 299.98px){
         font-size: 10px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 300px) and (max-width: 419.8px),
-    screen and (min-resolution : 96dpi)and (min-width: 300px) and (max-width: 419.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 300px) and (max-width: 419.8px){
+    @media screen and (min-width: 300px) and (max-width: 419.98px){
         font-size: 12px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 420px) and (max-width: 908.8px),
-    screen and (min-resolution : 96dpi) and  (min-width: 420px) and (max-width: 908.8px),
-    screen and (min-resolution : 1dppx) and  (min-width: 420px) and (max-width: 908.8px){
+    @media screen and (min-width: 420px) and (max-width: 908.98px){
         font-size: 14px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 909px) and (max-width: 1399.8px){
+    @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 15px;
-
     }  
     
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px),
-    screen and (min-resolution : 96dpi) and (min-width: 1400px),
-    screen and (min-resolution : 1dppx) and (min-width: 1400px){
+    @media screen and (min-width: 1400px){
         font-size: 16px;
     }  
 `,lm=ue.div`
@@ -677,7 +666,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         align-items: center;
     }
       
-    @media screen and (min-width: 768px) and (max-width: 1399.8px){
+    @media screen and (min-width: 768px) and (max-width: 1399.98px){
         row-gap: 15px;
     }
 `,cm=ue.ul`
@@ -690,7 +679,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       justify-content: center;
     }
 
-    @media screen and (min-width: 360px) and (max-width: 767.8px){
+    @media screen and (min-width: 360px) and (max-width: 767.98px){
         flex-direction: row;
         column-gap: 15px;
         align-items: center;
@@ -702,13 +691,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     margin-bottom: 5px;
     text-align: center;
 
-    @media screen and (min-width: 419.8px) and (max-width: 908.8px){
+    @media screen and (min-width: 419.8px) and (max-width: 908.98px){
         font-size: 13px;
     }
     @media screen and (min-width: 768px){
         text-align: left;
     }  
-    @media screen and (min-width:909px){
+    @media screen and (min-width: 909px){
         font-size: 15px;
     }  
 `,po=ue.a`
@@ -730,7 +719,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     gap: 10px;
     justify-content: flex-start;
 
-    @media screen and (max-width: 767.8px){
+    @media screen and (max-width: 767.98px){
         justify-content: center;
     }
 
