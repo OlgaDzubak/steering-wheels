@@ -42,7 +42,7 @@ const GlobalStyles = css`
   }
 
   body {
-    min-width: 320;
+    min-width: 320px;
     background-color: var(--whitefifty-color);
     font-family: 'Manrope', sans-serif;
     color: var(--text-color);

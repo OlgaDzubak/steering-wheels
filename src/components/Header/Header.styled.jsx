@@ -106,6 +106,7 @@ export const Header_Title = styled.h1`
     margin-top:-10px;
     margin-bottom: 15px;
 
+
     @media screen and (max-width: 299.8px){
         font-size: 22px;
         text-align: center;
@@ -123,13 +124,14 @@ export const Header_Title = styled.h1`
 
     @media screen and (min-width: 768px) and (max-width: 908.98px){
         font-size: 40px;
+        letter-spacing: -0.01em;
     }
 
     @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 44px;
     }  
     
-    @media screen and and (min-width: 1400px){
+    @media screen and (min-width: 1400px){
         font-size: 52px;
     }     
 `;
