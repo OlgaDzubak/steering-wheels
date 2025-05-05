@@ -117,7 +117,7 @@ export const Header_Title = styled.h1`
         text-align: center;
     }
 
-    @media screen and (min-width: 420px) and (max-width: 767.8px){
+    @media screen and (min-width: 420px) and (max-width: 767.98px){
         font-size: 38px;
         text-align: center;
     }
@@ -143,23 +143,23 @@ export const Header_SubTitle = styled.h2`
         text-align: center;
     }
 
-    @media screen and (min-width: 300px) and (max-width: 419.8px){
+    @media screen and (min-width: 300px) and (max-width: 419.98px){
         font-size: 15px;
         margin-bottom: 15px;
         text-align: center;
     }
 
-    @media screen and (min-width: 420px) and (max-width: 767.8px){
+    @media screen and (min-width: 420px) and (max-width: 767.98px){
         font-size: 16px;
         text-align: center;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 908.8px){
+    @media screen and (min-width: 768px) and (max-width: 908.98px){
         font-size: 16px;
     }
 
 
-    @media screen and (min-width: 909px) and (max-width: 1399.8px){
+    @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 16px;
 
     }  
@@ -214,7 +214,7 @@ export const Header_P = styled.p`
     margin-bottom: 11px;
     text-align: center;
 
-    @media screen and (min-width: 767.8px){
+    @media screen and (min-width: 767.98px){
         text-align: left;
     }
 
@@ -231,11 +231,11 @@ export const Header_A = styled.a`
         color: darkred;
     };
 
-    @media screen and (min-width: 419.8px) and (max-width: 908.8px){
+    @media screen and (min-width: 419.98px) and (max-width: 908.98px){
         font-size: 16px;
     }
 
-    @media screen and (min-width:909px) and (max-width: 1399.8px){
+    @media screen and (min-width:909px) and (max-width: 1399.98px){
         font-size: 17px;
         
     }  

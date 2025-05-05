@@ -18,7 +18,7 @@ export const Container = styled.div`
   align-items: flex-start;
   gap: 40px;
 
-  @media screen and (max-width: 767.8px){
+  @media screen and (max-width: 767.98px){
     flex-direction: column;
     row-gap: 15px;
     align-items: center;
@@ -36,7 +36,7 @@ export const Footer_TitleContainer = styled.div`
     margin-bottom: 10px;
     align-items: center;
  
-    @media screen and (min-width: 768px) and (max-width: 1399.8px){
+    @media screen and (min-width: 768px) and (max-width: 1399.98px){
         width: 650px;
         align-items: flex-start;
     }  
@@ -52,19 +52,19 @@ export const Footer_Title = styled.h3`
     margin-bottom: 15px;
     text-align: center;
 
-    @media screen and (max-width: 419.8px){
+    @media screen and (max-width: 419.98px){
         font-size: 15px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 420px) and (max-width: 908.8px){
+    @media screen and (min-width: 420px) and (max-width: 908.98px){
         font-size: 18px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 909px) and (max-width: 1399.8px){
+    @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 24px;
     }  
     
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px){
+    @media screen and (min-width: 1400px){
         font-size: 32px;
     }     
 `;
@@ -72,34 +72,23 @@ export const Footer_Title = styled.h3`
 export const Footer_SubTitle = styled.h4`
     text-align: center;
 
-    @media screen and (min-device-pixel-ratio: 1) and (max-width: 299.8px),
-    screen and (min-resolution : 96dpi) and (max-width: 299.8px),
-    screen and (min-resolution : 1dppx) and (max-width: 299.8px){
+    @media screen and (max-width: 299.98px){
         font-size: 10px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 300px) and (max-width: 419.8px),
-    screen and (min-resolution : 96dpi)and (min-width: 300px) and (max-width: 419.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 300px) and (max-width: 419.8px){
+    @media screen and (min-width: 300px) and (max-width: 419.98px){
         font-size: 12px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 420px) and (max-width: 908.8px),
-    screen and (min-resolution : 96dpi) and  (min-width: 420px) and (max-width: 908.8px),
-    screen and (min-resolution : 1dppx) and  (min-width: 420px) and (max-width: 908.8px){
+    @media screen and (min-width: 420px) and (max-width: 908.98px){
         font-size: 14px;
     }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 96dpi) and (min-width: 909px) and (max-width: 1399.8px),
-    screen and (min-resolution : 1dppx) and (min-width: 909px) and (max-width: 1399.8px){
+    @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 15px;
-
     }  
     
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1400px),
-    screen and (min-resolution : 96dpi) and (min-width: 1400px),
-    screen and (min-resolution : 1dppx) and (min-width: 1400px){
+    @media screen and (min-width: 1400px){
         font-size: 16px;
     }  
 `;
@@ -118,7 +107,7 @@ export const Footer_ContactsContainer = styled.div`
         align-items: center;
     }
       
-    @media screen and (min-width: 768px) and (max-width: 1399.8px){
+    @media screen and (min-width: 768px) and (max-width: 1399.98px){
         row-gap: 15px;
     }
 `;
@@ -133,7 +122,7 @@ export const Footer_Contacts_ul = styled.ul`
       justify-content: center;
     }
 
-    @media screen and (min-width: 360px) and (max-width: 767.8px){
+    @media screen and (min-width: 360px) and (max-width: 767.98px){
         flex-direction: row;
         column-gap: 15px;
         align-items: center;
@@ -147,13 +136,13 @@ export const Footer_P = styled.p`
     margin-bottom: 5px;
     text-align: center;
 
-    @media screen and (min-width: 419.8px) and (max-width: 908.8px){
+    @media screen and (min-width: 419.8px) and (max-width: 908.98px){
         font-size: 13px;
     }
     @media screen and (min-width: 768px){
         text-align: left;
     }  
-    @media screen and (min-width:909px){
+    @media screen and (min-width: 909px){
         font-size: 15px;
     }  
 `;
@@ -182,7 +171,7 @@ export const SocialLinks_ul = styled.ul`
     gap: 10px;
     justify-content: flex-start;
 
-    @media screen and (max-width: 767.8px){
+    @media screen and (max-width: 767.98px){
         justify-content: center;
     }
 
