@@ -28,7 +28,7 @@ export const Menu_li = styled.li`
 
   &:hover, &:focus{
    transform: scale(1.05); 
-  }  
+  }
 `;
 
 export const Button = styled.button`

@@ -18,7 +18,6 @@ const HomePage = () => {
     document.querySelector("title").textContent = contentData.pageTitle[language];
   }, [language] );
 
-  
 
   return  <>
             <Header />

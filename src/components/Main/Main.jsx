@@ -7,7 +7,7 @@ import Gallery from '../Gallery/Gallery';
 import FsLightbox from 'fslightbox-react';
 import { ThreeDots } from 'react-loader-spinner';
 import { Loader } from '../Loader/Loader.styled';
-import { Container, GalleryTitle } from './Main.styled';
+import { Container, GalleryTitle, FsLightbox_Div, FsLightbox_Img, FsLightbox_P } from './Main.styled';
 
 const Main = () => {
   
@@ -34,7 +34,7 @@ const Main = () => {
         setPhotosIsEmpty(true);
         const {data} = await getCategories(language, abortCtrl);
 
-        if (data.length === 0)  {
+        if (data.length === 0){
           setCategoriesIsEmpty(true) 
         } else {
           setCategoriesIsEmpty(false);
@@ -72,7 +72,7 @@ const Main = () => {
         const category = ($categories[activeCategoryIdx] === contentData.all[language]) ? "" : $categories[activeCategoryIdx];
         const {data} = await getPhotos(language, category, abortCtrl);
 
-        if (data.length === 0)  {
+        if (data.length === 0){
           setPhotosIsEmpty(true) 
         } else {
           setPhotosIsEmpty(false) 
@@ -116,9 +116,9 @@ const Main = () => {
     return  <main>
                 <section>
                   <Container>
-                      <GalleryTitle>{ contentData.galleryTitle[language] }</GalleryTitle>                        
+                      <GalleryTitle>{ contentData.galleryTitle[language] }</GalleryTitle>
 
-                        { (!categoriesIsEmpty) &&  <Menu  
+                        { (!categoriesIsEmpty) &&  <Menu
                                                       language={language} 
                                                       categories={$categories}
                                                       activeIdx={activeCategoryIdx} 
@@ -126,22 +126,23 @@ const Main = () => {
                                                    </Menu> }
 
                         { (!photosIsEmpty) && <>
-                                                <Gallery  photos={$photos} 
-                                                          onGalleryItemClick={openLightboxOnSlide} />
+                                                <Gallery photos={$photos} onGalleryItemClick={openLightboxOnSlide} />
                                               
                                                 <FsLightbox
                                                   toggler={lightboxController.toggler}
                                                   slide={lightboxController.slide}
-                                                  sources={$photos.map((item) => item.photo_url)}
+              sources={$photos.map((item) =>
+                <FsLightbox_Div>
+                  <FsLightbox_Img src={item.photo_url} alt={item[contentData.descriptionField[language]]}></FsLightbox_Img>
+                  <FsLightbox_P>{item[contentData.descriptionField[language]]}</FsLightbox_P>
+                </FsLightbox_Div>
+                
+                  )}
                                                   customAttributes={$photos.map((item) => {return {alt: item[contentData.descriptionField[language]]}})}
                                                 />
-                                               
                                               </> }
 
-                        { isLoading &&  <Loader>
-                                            {' '} 
-                                            <ThreeDots color="var(--text-color)" width="60" />
-                                        </Loader> }
+                        { isLoading && <Loader>{' '}<ThreeDots color="var(--text-color)" width="60" /></Loader> }
           
                   </Container>
                 </section> 

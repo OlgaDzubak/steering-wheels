@@ -8,7 +8,7 @@ export const Item_li = styled.li`
 
       &:hover, &:focus {
             transform: scale(1.03);
-            cursor: zoom-in;  
+            cursor: zoom-in;
       };
 
       @media screen and (max-width: 439.98px){

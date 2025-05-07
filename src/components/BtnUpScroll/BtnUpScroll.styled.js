@@ -10,6 +10,7 @@ export const ScrollToTopDiv = styled.div`
   border-radius: 100%;
   border: 2px solid var(--scroll-up-btn);
   color:  var(--scroll-up-btn);
+  background-color:  var(--whitefifty-color);
   transition: transform var(--transition);
 
   &:hover, &:focus{

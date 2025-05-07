@@ -7,10 +7,10 @@ const HomePage = lazy(() => import('../src/pages/HomePage'));
 
 function App() {
 
-  return  <Routes>
-            <Route  path ="/" element={ <HomePage />  }/>
-            <Route  path="*"  element={ <ErrorPage /> }/>
-          </Routes>
+  return <Routes>
+          <Route path ="/" element={<HomePage />}/>
+          <Route path="*" element={<ErrorPage />}/>
+         </Routes>
 };
 
 export default App;

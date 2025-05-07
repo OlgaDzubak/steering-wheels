@@ -8,7 +8,7 @@ export const Footer_ = styled.footer`
   padding-top: 30px;
   padding-bottom: 20px;
   color: var(--footer-text-color);
-  box-shadow: 0px -2px 0px 0px  var(--shadow-color);
+  box-shadow: 0px -2px 0px 0px var(--shadow-color);
   background-color: var(--footer-back-color);
 `;
 

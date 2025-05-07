@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
-import { ReactComponent as InstagramIMG } from '../../assets/images/link_icons/instagram.svg';
-import { ReactComponent as ViberIMG     } from '../../assets/images/link_icons/viber.svg';
-import { ReactComponent as TelegramIMG  } from '../../assets/images/link_icons/telegram.svg';
-import { Placeholder } from 'react-select/animated';
+import {ReactComponent as InstagramIMG} from '../../assets/images/link_icons/instagram.svg';
+import {ReactComponent as ViberIMG} from '../../assets/images/link_icons/viber.svg';
+import {ReactComponent as TelegramIMG} from '../../assets/images/link_icons/telegram.svg';
 
 
 export const Header_ = styled.header`
@@ -55,7 +54,7 @@ export const SelectLabel = styled.label`
 
 export const SelectStyles = () => {
     return {
-        container: (provided)  =>({
+        container: (provided)=>({
         ...provided,
         }),
         control: (provided) => ({
@@ -107,14 +106,12 @@ export const Header_TitleContainer = styled.div`
     gap: 40px;
 
     @media screen and (min-width: 768px) and (max-width: 1399.8px){
-        // width: 650px;
-        align-items: flex-start;
-    }  
+     align-items: flex-start;
+    } 
     
     @media screen and (min-width: 1400px){
-        // width: 800px;
-        align-items: flex-start;
-        gap: 20px;
+     align-items: flex-start;
+     gap: 20px;
     } 
 
 `;
@@ -143,11 +140,11 @@ export const Header_Title = styled.h1`
 
     @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 44px;
-    }  
+    } 
     
     @media screen and (min-width: 1400px){
         font-size: 52px;
-    }     
+    } 
 `;
 export const Header_SubTitle = styled.h2`
     
@@ -172,39 +169,19 @@ export const Header_SubTitle = styled.h2`
         font-size: 16px;
     }
 
-
     @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 16px;
-
-    }  
+    }
     
     @media screen and (min-width: 1400px){
         font-size: 20px;
-    }  
+    }
 `;
 
 
 //---- Contacts ------------------------------------------------------
 
-// export const Header_ContactsContainer = styled.div`
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: space-between;
-//     // row-gap: 25px;
-
-//     @media screen and (max-width: 767.8px){
-//         align-items: center;
-//         width: 100%;
-//     }
-      
-//       @media screen and (min-width: 768px){
-//           row-gap: 15px;
-//           align-items: flex-start;
-//       }
-
-// `;
-export const Header_RightContainer =styled.div`
+export const Header_RightContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -265,7 +242,7 @@ export const Header_A = styled.a`
     @media screen and (min-width:909px) and (max-width: 1399.98px){
         font-size: 17px;
         
-    }  
+    }
     
     @media screen and (min-width: 1400px){
         font-size: 18px;
@@ -299,7 +276,7 @@ export const SocialLinks_A = styled.a`
     border: 1px solid var(--text-color);
     border-radius: 25%;
     &:hover, &:focus {
-        transform: scale(1.1);  
+        transform: scale(1.1);
     };
 `;
 export const StyledInstagramSVG = styled(InstagramIMG)`

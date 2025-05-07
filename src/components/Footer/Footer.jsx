@@ -1,24 +1,12 @@
-import { useContext } from 'react';
-import { GlobalContext } from '../../context/GlobalContext';
+import {useContext} from 'react';
+import {GlobalContext} from '../../context/GlobalContext';
 import contentData from '../../helpers/language';
-import {    Footer_, 
-            Container, 
-            Footer_TitleContainer, 
-            Footer_Title, 
-            Footer_SubTitle,
-            Footer_Contacts_ul, 
-            Footer_ContactsContainer, 
-            Footer_Contacts_li, 
-            Footer_P, 
-            Footer_A,
-            SocialLinks_ul,
-            SocialLinks_li,
-            SocialLinks_A,
-            StyledInstagramSVG,
-            StyledViberSVG,
-            StyledTelegramSVG   } from './Footer.styled';
+import {Footer_, Container, Footer_TitleContainer, Footer_Title, Footer_SubTitle,
+        Footer_Contacts_ul, Footer_ContactsContainer, Footer_Contacts_li, Footer_P, Footer_A,
+        SocialLinks_ul, SocialLinks_li, SocialLinks_A,
+        StyledInstagramSVG, StyledViberSVG, StyledTelegramSVG} from './Footer.styled';
 
-            
+        
 const Footer = () => {
 
     const { language } = useContext(GlobalContext);

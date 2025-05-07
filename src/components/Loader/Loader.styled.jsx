@@ -26,12 +26,12 @@ const bounce = keyframes`
 `;
 
 export const LoaderContainer = styled.div`
-  width: 100%;  
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;  
+  gap: 20px;
 `;
 
 export const LoaderSVG = styled(LoaderIcon)`
