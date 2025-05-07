@@ -126,6 +126,7 @@ export const Footer_Contacts_li = styled.li`
 export const Footer_P = styled.p`
     font-weight: 600;
     font-size: 12px;
+    font-style: normal;
     margin-bottom: 5px;
     text-align: center;
 
@@ -140,6 +141,7 @@ export const Footer_A = styled.a`
     font-weight: 500;
     font-size: 13px;
     text-wrap:nowrap;
+    font-style: normal;
     transition: var(--transition);
     &:hover, &:focus {
         color: var(--red);

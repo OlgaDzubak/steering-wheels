@@ -210,10 +210,12 @@ export const Header_Contacts_ul = styled.ul`
     }
 `;
 export const Header_Contacts_li = styled.li`
+    
 `;
 export const Header_P = styled.p`
     font-weight: 600;
     text-wrap:nowrap;
+    font-style: normal;
     margin-bottom: 20px;
     text-align: center;
 
@@ -228,6 +230,7 @@ export const Header_A = styled.a`
     padding-bottom: 3px;
     font-weight: 500;
     font-size: 14px;
+    font-style: normal;
     text-wrap:nowrap;
     transition: var(--transition);
     &:hover,
@@ -282,16 +285,16 @@ export const SocialLinks_A = styled.a`
 export const StyledInstagramSVG = styled(InstagramIMG)`
     height: 30px;
     width: 30px;
-    fill: var(--text-color);
+    fill: var(--scroll-up-btn);
 `;
 export const StyledViberSVG = styled(ViberIMG)`
     height: 28px;
     width: 28px;
-    fill: var(--text-color);
+    fill: var(--scroll-up-btn);
 `;
 export const StyledTelegramSVG = styled(TelegramIMG)`
     height: 30px;
     width: 30px;
-    fill: var(--text-color);
+    fill: var(--scroll-up-btn);
     
 `;
