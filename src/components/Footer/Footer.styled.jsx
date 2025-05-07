@@ -57,15 +57,15 @@ export const Footer_Title = styled.h3`
     }
     @media screen and (min-width: 420px) and (max-width: 908.98px){
         font-size: 24px;
-        text-align: start;
     }
-    @media screen and (min-width: 909px){
-        font-size: 33px;
+    @media screen and (min-width: 768px){
+        font-size: 30px;
         text-align: start;
     }   
 `;
 
 export const Footer_SubTitle = styled.h4`
+    
     text-align: center;
     line-height: 1.25;
 

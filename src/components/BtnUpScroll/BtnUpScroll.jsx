@@ -1,4 +1,4 @@
-import ScrollToTop from "react-scroll-up"; 
+import ScrollToTop from "react-scroll-up";
 import {ScrollToTopDiv, UpScrollSvg } from "./BtnUpScroll.styled";
 
 export const BtnUpScroll = () => {
