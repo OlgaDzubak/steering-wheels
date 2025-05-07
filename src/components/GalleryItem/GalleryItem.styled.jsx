@@ -17,7 +17,8 @@ export const Item_li = styled.li`
 `;
 
 export const Item_img = styled.img`
-      width: 100%;
+      width: 400px;
+      height: 400px;
 `;
 
 export const Item_P = styled.p`

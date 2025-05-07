@@ -7,9 +7,7 @@ justify-content: space-between;
 align-items: flex-start;
 gap: 40px;
 
-@media screen and (min-device-pixel-ratio: 1) and (max-width: 767.8px),
-screen and (min-resolution : 96dpi) and (max-width: 767.8px),
-screen and (min-resolution : 1dppx) and (max-width: 767.8px){
+@media screen and (max-width: 767.8px){
   flex-direction: column;
   row-gap: 15px;
   align-items: center;
@@ -17,7 +15,6 @@ screen and (min-resolution : 1dppx) and (max-width: 767.8px){
 `;
 
 export const P = styled.p`
-  // color: rgba(243, 243, 243, 0.1);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.02;

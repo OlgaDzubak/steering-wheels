@@ -2,11 +2,15 @@ import styled from '@emotion/styled';
 import { ReactComponent as InstagramIMG } from '../../assets/images/link_icons/instagram.svg';
 import { ReactComponent as ViberIMG     } from '../../assets/images/link_icons/viber.svg';
 import { ReactComponent as TelegramIMG  } from '../../assets/images/link_icons/telegram.svg';
+import { Placeholder } from 'react-select/animated';
 
 
 export const Header_ = styled.header`
     padding-top: 30px;
-    box-shadow: 0px 2px 0px 0px var(--shadow-color);
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 2px var(--shadow-color);
+    color: var(--header-text-color);
+    background-color: var(--header-back-color);
 `;
 
 export const Container = styled.div`
@@ -41,6 +45,9 @@ export const TitleAndContacts = styled.div`
 `;
 
 export const LanguageSelectDiv = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
 `;
 
 export const SelectLabel = styled.label`
@@ -48,27 +55,45 @@ export const SelectLabel = styled.label`
 
 export const SelectStyles = () => {
     return {
-        container: (baseStyles)  =>({
-        ...baseStyles,
+        container: (provided)  =>({
+        ...provided,
         }),
-        control: (baseStyles) => ({
-        display: 'flex',
-        padding: '0px 0px 0px 0px',
-        fontWeight: '400',
-        fontSize: '12px',
-        color: `var(--text-color)`,
-        backgroundColor: 'transparent',
+        control: (provided) => ({
+            // ...provided,
+            display: 'flex',
+            padding: '5px 0px 5px 0px',
+            fontWeight: '400',
+            fontSize: '12px',
         }),
-        option: () => ({
+        option: (provided) => ({
+            ...provided,
             padding: '5px 10px 5px 10px',
             fontSize: '12px',
             backgroundColor: 'transparent',
-            color: `var(--text-color)`,
+            color: 'var(--header-text-color)',
             cursor: 'default',
             transition: `color var(--transition)`,
             ':hover' : { backgroundColor: `var(--back-color)` },
             ':active': { backgroundColor: `var(--back-color)` },
         }),
+        valueContainer: (provided)=> ({
+            ...provided,
+            padding: '5px',
+            display: 'flex',
+            alignItems: 'center',
+        }),
+        placeHolder: () => ({
+            color: 'var(--scroll-up-btn)',
+        }),
+        dropdownIndicator: (provided) => ({
+            ...provided,
+            color: 'var(--scroll-up-btn)',
+            paddingTop: '0',
+            paddingBottom: '0',
+            '&:hover': { 
+                color: 'var(--header-text-color)', 
+            },
+          }),
     };
 };
 
@@ -79,51 +104,40 @@ export const Header_TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items : center;
+    gap: 40px;
 
     @media screen and (min-width: 768px) and (max-width: 1399.8px){
-        width: 650px;
+        // width: 650px;
         align-items: flex-start;
     }  
     
     @media screen and (min-width: 1400px){
-        width: 800px;
+        // width: 800px;
         align-items: flex-start;
+        gap: 20px;
     } 
 
 `;
-export const Header_RightContainer =styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    row-gap: 25px;
-
-    @media screen and (max-width: 767.8px){
-        align-items: center;
-    }
-`;
-
 export const Header_Title = styled.h1`
-    margin-top:-10px;
-    margin-bottom: 15px;
-
+    line-height: 1.25;
 
     @media screen and (max-width: 299.8px){
         font-size: 22px;
         text-align: center;
     }
 
-    @media screen and (min-width: 300px) and (max-width: 419.98px){
+    @media screen and (min-width: 300px) and (max-width: 529.98px){
+        font-size: 28px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 530px) and (max-width: 767.98px){
         font-size: 32px;
         text-align: center;
     }
 
-    @media screen and (min-width: 420px) and (max-width: 767.98px){
-        font-size: 38px;
-        text-align: center;
-    }
-
     @media screen and (min-width: 768px) and (max-width: 908.98px){
-        font-size: 40px;
+        font-size: 34px;
         letter-spacing: -0.01em;
     }
 
@@ -172,22 +186,34 @@ export const Header_SubTitle = styled.h2`
 
 //---- Contacts ------------------------------------------------------
 
-export const Header_ContactsContainer = styled.div`
+// export const Header_ContactsContainer = styled.div`
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: space-between;
+//     // row-gap: 25px;
+
+//     @media screen and (max-width: 767.8px){
+//         align-items: center;
+//         width: 100%;
+//     }
+      
+//       @media screen and (min-width: 768px){
+//           row-gap: 15px;
+//           align-items: flex-start;
+//       }
+
+// `;
+export const Header_RightContainer =styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 25px;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
 
     @media screen and (max-width: 767.8px){
         align-items: center;
-        width: 100%;
     }
-      
-      @media screen and (min-width: 768px){
-          row-gap: 15px;
-          align-items: flex-start;
-      }
-
 `;
 export const Header_Contacts_ul = styled.ul`
     display: flex;
@@ -211,10 +237,11 @@ export const Header_Contacts_li = styled.li`
 export const Header_P = styled.p`
     font-weight: 600;
     text-wrap:nowrap;
-    margin-bottom: 11px;
+    margin-bottom: 20px;
     text-align: center;
 
     @media screen and (min-width: 767.98px){
+        padding-top: 15px;
         text-align: left;
     }
 
@@ -259,8 +286,8 @@ export const SocialLinks_ul = styled.ul`
     }
 `;
 export const SocialLinks_li = styled.li`
-    width: 36px;
-    height: 36px;
+    width: 46px;
+    height: 46px;
 `;
 export const SocialLinks_A = styled.a`
     display: flex;
@@ -276,18 +303,18 @@ export const SocialLinks_A = styled.a`
     };
 `;
 export const StyledInstagramSVG = styled(InstagramIMG)`
-    height: 22px;
-    width: 22px;
+    height: 30px;
+    width: 30px;
     fill: var(--text-color);
 `;
 export const StyledViberSVG = styled(ViberIMG)`
-    height: 20px;
-    width: 20px;
+    height: 28px;
+    width: 28px;
     fill: var(--text-color);
 `;
 export const StyledTelegramSVG = styled(TelegramIMG)`
-    height: 22px;
-    width: 22px;
+    height: 30px;
+    width: 30px;
     fill: var(--text-color);
     
 `;

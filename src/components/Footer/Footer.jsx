@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import { GlobalContext } from '../../context/GlobalContext';
 import contentData from '../../helpers/language';
 import {    Footer_, 
             Container, 
@@ -17,7 +19,9 @@ import {    Footer_,
             StyledTelegramSVG   } from './Footer.styled';
 
             
-const Footer = ({language}) => {
+const Footer = () => {
+
+    const { language } = useContext(GlobalContext);
 
     return  < Footer_>
                 < Container>

@@ -27,9 +27,17 @@ const contentData = {
             ua : "Галерея виконаних робіт",
             ru : "Галерея выполненных работ",
         },
+        nameField : {
+            ua : "name_ua",
+            ru : "name_ru",
+        },
         descriptionField : {
             ua : "photo_description_ua",
             ru : "photo_description_ru",
+        },
+        all: {
+            ua : "Усе",
+            ru : "Всё",
         }
 }
 

@@ -34,11 +34,19 @@ const GlobalStyles = css`
   :root {    
     --text-color: rgba(30, 30, 30);
     --back-color: rgba(30, 30, 30, 0.1);
-    --shadow-color: rgba(200, 200, 200, 0.7);
+
+    --header-text-color:rgb(30, 30, 30);
+    --header-back-color: rgb(240, 240, 240);
+
+    --footer-text-color: var(--header-back-color);
+    --footer-back-color: var(--header-text-color);
+    
+    --scroll-up-btn: rgba(100, 100, 100, 1);
+    --shadow-color: rgba(1, 1, 1, 0.7);
     --whitetwenty-color: rgba(243, 243, 243, 0.2);
     --whitefifty-color: rgba(243, 243, 243, 0.5);
     --transition: 300ms ease-in; 
-    --container-padding: 20px;
+    --container-padding: 40px;
   }
 
   body {
@@ -48,9 +56,18 @@ const GlobalStyles = css`
     color: var(--text-color);
     word-wrap: break-word;
     line-height: 1.2;
+    margin: 0;
+    
   }
 
-  h1, h2, p {
+  #root{
+    min-height: calc(100vh - 16px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h1, h2, h3, h4, p {
     margin: 0;
     padding: 0;
   }

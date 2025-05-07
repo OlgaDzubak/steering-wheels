@@ -20,9 +20,9 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-loader-spinner": "^5.4.5",
-    "react-paginate": "^8.2.0",
     "react-router-dom": "^6.21.1",
     "react-scroll": "^1.9.3",
+    "react-scroll-up": "^1.4.0",
     "react-select": "^5.8.0",
     "vite-plugin-svgr": "^3.2.0"
   },

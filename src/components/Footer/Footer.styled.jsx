@@ -6,8 +6,10 @@ import { ReactComponent as TelegramIMG } from '../../assets/images/link_icons/te
 
 export const Footer_ = styled.footer`
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  color: var(--footer-text-color);
   box-shadow: 0px -2px 0px 0px  var(--shadow-color);
+  background-color: var(--footer-back-color);
 `;
 
 export const Container = styled.div`
@@ -37,40 +39,35 @@ export const Footer_TitleContainer = styled.div`
     align-items: center;
  
     @media screen and (min-width: 768px) and (max-width: 1399.98px){
-        width: 650px;
+        margin-bottom: 0px;
         align-items: flex-start;
     }  
-    
     @media screen and (min-width: 1400px){
-        width: 800px;
         align-items: flex-start;
     } 
 `;
 
 export const Footer_Title = styled.h3`
-    margin-top:-5px;
     margin-bottom: 15px;
+    line-height: 1.25;
     text-align: center;
 
     @media screen and (max-width: 419.98px){
         font-size: 15px;
     }
-
     @media screen and (min-width: 420px) and (max-width: 908.98px){
-        font-size: 18px;
-    }
-
-    @media screen and (min-width: 909px) and (max-width: 1399.98px){
         font-size: 24px;
-    }  
-    
-    @media screen and (min-width: 1400px){
-        font-size: 32px;
-    }     
+        text-align: start;
+    }
+    @media screen and (min-width: 909px){
+        font-size: 33px;
+        text-align: start;
+    }   
 `;
 
 export const Footer_SubTitle = styled.h4`
     text-align: center;
+    line-height: 1.25;
 
     @media screen and (max-width: 299.98px){
         font-size: 10px;
@@ -84,11 +81,7 @@ export const Footer_SubTitle = styled.h4`
         font-size: 14px;
     }
 
-    @media screen and (min-width: 909px) and (max-width: 1399.98px){
-        font-size: 15px;
-    }  
-    
-    @media screen and (min-width: 1400px){
+    @media screen and (min-width: 909px){
         font-size: 16px;
     }  
 `;
@@ -136,28 +129,24 @@ export const Footer_P = styled.p`
     margin-bottom: 5px;
     text-align: center;
 
-    @media screen and (min-width: 419.8px) and (max-width: 908.98px){
-        font-size: 13px;
-    }
     @media screen and (min-width: 768px){
         text-align: left;
     }  
     @media screen and (min-width: 909px){
-        font-size: 15px;
+        font-size: 13px;
     }  
 `;
 export const Footer_A = styled.a`
     font-weight: 500;
-    font-size: 12px;
+    font-size: 13px;
     text-wrap:nowrap;
     transition: var(--transition);
-    &:hover,
-    &:focus {
-        color: darkred;
+    &:hover, &:focus {
+        color: var(--header-text-color);
     };
 
     @media screen and (min-width: 1400px){
-        font-size: 13px;
+        font-size: 14px;
     } 
 `;
 
@@ -177,8 +166,8 @@ export const SocialLinks_ul = styled.ul`
 
 `;
 export const SocialLinks_li = styled.li`
-    width: 25px;
-    height: 25px;
+    width: 32px;
+    height: 32px;
 `;
 export const SocialLinks_A = styled.a`
     display: flex;
@@ -187,7 +176,7 @@ export const SocialLinks_A = styled.a`
     width: 100%;
     height: 100%;
     transition: var(--transition);
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--header-back-color);;
     border-radius: 25%;
 
     &:hover, &:focus {
@@ -195,17 +184,19 @@ export const SocialLinks_A = styled.a`
     }
 `;
 export const StyledInstagramSVG = styled(InstagramIMG)`
-    height: 20px;
-    width: 20px;
-    fill: var(--text-color);
+    height: 17px;
+    width: 170px;
+    fill: var(--header-back-color);
 `;
 export const StyledViberSVG = styled(ViberIMG)`
-    height: 18px;
-    width: 18px;
-    fill: var(--text-color);
+    height: 17px;
+    width: 17px;
+    fill: var(--header-back-color);
 `;
 export const StyledTelegramSVG = styled(TelegramIMG)`
-    height: 20px;
-    width: 20px;
-    fill: var(--text-color);
+    height: 17px;
+    width: 17px;
+    fill: var(--header-back-color);
+    stroke: var(--header-back-color);
+    stroke-width: 1px;
 `;
