@@ -46,6 +46,7 @@ const GlobalStyles = css`
     --shadow-color: rgba(1, 1, 1, 0.7);
     --whitetwenty-color: rgba(243, 243, 243, 0.2);
     --whitefifty-color: rgba(243, 243, 243, 0.5);
+    --red :  rgb(194, 33, 33);
     --transition: 300ms ease-in; 
     --container-padding: 40px;
   }

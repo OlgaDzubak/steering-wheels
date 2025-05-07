@@ -142,7 +142,7 @@ export const Footer_A = styled.a`
     text-wrap:nowrap;
     transition: var(--transition);
     &:hover, &:focus {
-        color: var(--header-text-color);
+        color: var(--red);
     };
 
     @media screen and (min-width: 1400px){

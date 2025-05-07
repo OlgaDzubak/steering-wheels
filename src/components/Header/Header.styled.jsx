@@ -232,7 +232,7 @@ export const Header_A = styled.a`
     transition: var(--transition);
     &:hover,
     &:focus {
-        color: darkred;
+        color: var(--red);
     };
 
     @media screen and (min-width: 419.98px) and (max-width: 908.98px){

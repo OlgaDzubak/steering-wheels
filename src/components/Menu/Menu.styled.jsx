@@ -23,7 +23,8 @@ export const Menu_li = styled.li`
   transition: transform var(--transition), border var(--transition);
 
   &.active{
-    border-bottom: 2px solid red;
+    font-weight: 600;
+    border-bottom: 2px solid var(--red);;
   }
 
   &:hover, &:focus{
